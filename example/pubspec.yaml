@@ -1,0 +1,22 @@
+name: example
+description: "A Flutter project to demonstrate the use of the magic_the_gathering_flutter package."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  magic_the_gathering_flutter:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
