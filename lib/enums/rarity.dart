@@ -1,5 +1,3 @@
-import 'package:magic_the_gathering_flutter/errors_and_exceptions.dart';
-
 enum Rarity {
   common,
   uncommon,
@@ -16,7 +14,7 @@ enum Rarity {
       'mythic' => mythic,
       'special' => special,
       'bonus' => bonus,
-      _ => throw BadDataError('unrecognized rarity $rarity'),
+      _ => throw ArgumentError.value(rarity, 'rarity', 'Unexpected rarity'),
     };
   }
 }

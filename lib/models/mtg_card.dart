@@ -1,5 +1,4 @@
 import 'package:magic_the_gathering_flutter/enums/rarity.dart';
-import 'package:magic_the_gathering_flutter/errors_and_exceptions.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_card_face.dart';
 
 class MTGCard extends MTGCardFace {
@@ -55,7 +54,7 @@ class MTGCard extends MTGCardFace {
       return null;
     }
     if (value is! List) {
-      throw BadDataError('card faces $value was unexpected');
+      throw ArgumentError.value(value, 'value', 'Expected type List');
     }
     if (value.isEmpty) {
       return null;
