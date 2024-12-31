@@ -53,7 +53,12 @@ class MTGCardFace extends Equatable {
     return value.cast<String, String>();
   }
 
-  List<Padding>? preparedManaCost() {
+  /// Pass null to [padding] to avoid using any padding.
+  ///
+  /// Defaults to 1.5 padding on each side of the symbol.
+  List<Widget>? preparedManaCost({
+    EdgeInsets? padding = const EdgeInsets.symmetric(horizontal: 1.5),
+  }) {
     if (manaCost == null) {
       return null;
     }
@@ -61,7 +66,7 @@ class MTGCardFace extends Equatable {
     if (matches.isEmpty) {
       return null;
     }
-    final List<Padding> manaCostSymbols = [];
+    final manaCostSymbols = <Widget>[];
     for (final match in matches) {
       final matchedSymbol = match.group(0);
       final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
@@ -72,11 +77,9 @@ class MTGCardFace extends Equatable {
           'Unexpected MTG symbol',
         );
       }
+      final svg = mtgSymbol.toSvg();
       manaCostSymbols.add(
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 1.5),
-          child: mtgSymbol.toSvg(),
-        ),
+        padding == null ? svg : Padding(padding: padding, child: svg),
       );
     }
     return manaCostSymbols;
