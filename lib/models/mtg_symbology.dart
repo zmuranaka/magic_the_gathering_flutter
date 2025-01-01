@@ -20,6 +20,12 @@ const Map<String, MTGSymbol> mtgSymbology = {
     english: 'an energy counter',
     manaValue: 0,
   ),
+  '{P}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/P.svg',
+    looseVariant: null,
+    english: 'modal budget pawprint',
+    manaValue: 0,
+  ),
   '{PW}': MTGSymbol(
     image: 'packages/magic_the_gathering_flutter/assets/PW.svg',
     looseVariant: null,
