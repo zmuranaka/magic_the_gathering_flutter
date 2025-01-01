@@ -362,8 +362,8 @@ const Map<String, MTGSymbol> mtgSymbology = {
     english: 'two generic mana or one green mana',
     manaValue: 2,
   ),
-  '{P}': MTGSymbol(
-    image: 'packages/magic_the_gathering_flutter/assets/P.svg',
+  '{H}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/H.svg',
     looseVariant: null,
     english: 'one colored mana or two life',
     manaValue: 1,
