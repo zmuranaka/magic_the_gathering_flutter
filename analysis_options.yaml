@@ -6,8 +6,8 @@ linter:
     always_use_package_imports: true
     annotate_overrides: true
     avoid_empty_else: true
-    avoid_unnecessary_containers: true
-    cascade_invocations: true
+    avoid_types_as_parameter_names: true
+    avoid_void_async: true
     empty_statements: true
     eol_at_end_of_file: true
     no_duplicate_case_values: true
@@ -18,4 +18,3 @@ linter:
     recursive_getters: true
     unnecessary_await_in_return: true
     unnecessary_late: true
-    use_key_in_widget_constructors: true
