@@ -1,573 +1,157 @@
 [
     {
         "object": "card",
-        "id": "24729f25-e900-4a71-a304-7346eb17990a",
-        "oracle_id": "7f394a7b-6945-45c8-ad2f-f761150c856a",
-        "multiverse_ids": [],
-        "arena_id": 70272,
-        "name": "A-Fires of Invention",
-        "lang": "en",
-        "released_at": "2019-10-04",
-        "uri": "https://api.scryfall.com/cards/24729f25-e900-4a71-a304-7346eb17990a",
-        "scryfall_uri": "https://scryfall.com/card/eld/A-125/a-fires-of-invention?utm_source=api",
-        "layout": "normal",
-        "highres_image": false,
-        "image_status": "lowres",
-        "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.jpg?1681158808",
-            "normal": "https://cards.scryfall.io/normal/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.jpg?1681158808",
-            "large": "https://cards.scryfall.io/large/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.jpg?1681158808",
-            "png": "https://cards.scryfall.io/png/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.png?1681158808",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.jpg?1681158808",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/2/4/24729f25-e900-4a71-a304-7346eb17990a.jpg?1681158808"
-        },
-        "mana_cost": "{4}{R}",
-        "cmc": 5.0,
-        "type_line": "Enchantment",
-        "oracle_text": "You can cast spells only during your turn and you can cast no more than two spells each turn.\nYou may cast spells with mana value less than or equal to the number of lands you control without paying their mana costs.",
-        "colors": [
-            "R"
-        ],
-        "color_identity": [
-            "R"
-        ],
-        "keywords": [],
-        "all_parts": [
-            {
-                "object": "related_card",
-                "id": "515aded7-16fc-498e-9736-f4853e6d5a72",
-                "component": "combo_piece",
-                "name": "Fires of Invention",
-                "type_line": "Enchantment",
-                "uri": "https://api.scryfall.com/cards/515aded7-16fc-498e-9736-f4853e6d5a72"
-            },
-            {
-                "object": "related_card",
-                "id": "24729f25-e900-4a71-a304-7346eb17990a",
-                "component": "combo_piece",
-                "name": "A-Fires of Invention",
-                "type_line": "Enchantment",
-                "uri": "https://api.scryfall.com/cards/24729f25-e900-4a71-a304-7346eb17990a"
-            }
-        ],
-        "legalities": {
-            "standard": "not_legal",
-            "future": "not_legal",
-            "historic": "legal",
-            "timeless": "not_legal",
-            "gladiator": "not_legal",
-            "pioneer": "not_legal",
-            "explorer": "not_legal",
-            "modern": "not_legal",
-            "legacy": "not_legal",
-            "pauper": "not_legal",
-            "vintage": "not_legal",
-            "penny": "not_legal",
-            "commander": "not_legal",
-            "oathbreaker": "not_legal",
-            "standardbrawl": "not_legal",
-            "brawl": "legal",
-            "alchemy": "not_legal",
-            "paupercommander": "not_legal",
-            "duel": "not_legal",
-            "oldschool": "not_legal",
-            "premodern": "not_legal",
-            "predh": "not_legal"
-        },
-        "games": [
-            "arena"
-        ],
-        "reserved": false,
-        "foil": false,
-        "nonfoil": true,
-        "finishes": [
-            "nonfoil"
-        ],
-        "oversized": false,
-        "promo": false,
-        "reprint": false,
-        "variation": false,
-        "set_id": "a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
-        "set": "eld",
-        "set_name": "Throne of Eldraine",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aeld&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/eld?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/24729f25-e900-4a71-a304-7346eb17990a/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A7f394a7b-6945-45c8-ad2f-f761150c856a&unique=prints",
-        "collector_number": "A-125",
-        "digital": true,
-        "rarity": "rare",
-        "flavor_text": "\"Just tell us how many you want and get out of the way.\"",
-        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Stanton Feng",
-        "artist_ids": [
-            "61529286-7476-4cb6-b6e1-8bced3b642fc"
-        ],
-        "illustration_id": "0b48e863-a302-4bc7-9740-4be5791f2117",
-        "border_color": "black",
-        "frame": "2015",
-        "security_stamp": "arena",
-        "full_art": false,
-        "textless": false,
-        "booster": false,
-        "story_spotlight": false,
-        "promo_types": [
-            "alchemy",
-            "rebalanced"
-        ],
-        "prices": {
-            "usd": null,
-            "usd_foil": null,
-            "usd_etched": null,
-            "eur": null,
-            "eur_foil": null,
-            "tix": null
-        },
-        "related_uris": {
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Fires%2Bof%2BInvention",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Fires%2Bof%2BInvention",
-            "edhrec": "https://edhrec.com/route/?cc=A-Fires+of+Invention"
-        }
-    },
-    {
-        "object": "card",
-        "id": "b24c3e9c-2aff-45fd-9c87-3ebd33bbe807",
-        "oracle_id": "eb5406e1-c3eb-4434-91f4-308622d3eab4",
-        "multiverse_ids": [],
-        "name": "A-Heartfire Hero",
-        "lang": "en",
-        "released_at": "2024-08-02",
-        "uri": "https://api.scryfall.com/cards/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807",
-        "scryfall_uri": "https://scryfall.com/card/blb/A-138/a-heartfire-hero?utm_source=api",
-        "layout": "normal",
-        "highres_image": true,
-        "image_status": "highres_scan",
-        "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.jpg?1731574838",
-            "normal": "https://cards.scryfall.io/normal/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.jpg?1731574838",
-            "large": "https://cards.scryfall.io/large/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.jpg?1731574838",
-            "png": "https://cards.scryfall.io/png/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.png?1731574838",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.jpg?1731574838",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/b/2/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807.jpg?1731574838"
-        },
-        "mana_cost": "{R}",
-        "cmc": 1.0,
-        "type_line": "Creature — Mouse Soldier",
-        "oracle_text": "Valiant — Whenever Heartfire Hero becomes the target of a spell or ability you control for the first time each turn, put a +1/+1 counter on it.\nWhen Heartfire Hero dies, it deals damage equal to its power to each opponent.",
-        "power": "0",
-        "toughness": "1",
-        "colors": [
-            "R"
-        ],
-        "color_identity": [
-            "R"
-        ],
-        "keywords": [
-            "Valiant"
-        ],
-        "all_parts": [
-            {
-                "object": "related_card",
-                "id": "48ace959-66b2-40c8-9bff-fd7ed9c99a82",
-                "component": "combo_piece",
-                "name": "Heartfire Hero",
-                "type_line": "Creature — Mouse Soldier",
-                "uri": "https://api.scryfall.com/cards/48ace959-66b2-40c8-9bff-fd7ed9c99a82"
-            },
-            {
-                "object": "related_card",
-                "id": "b24c3e9c-2aff-45fd-9c87-3ebd33bbe807",
-                "component": "combo_piece",
-                "name": "A-Heartfire Hero",
-                "type_line": "Creature — Mouse Soldier",
-                "uri": "https://api.scryfall.com/cards/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807"
-            }
-        ],
-        "legalities": {
-            "standard": "not_legal",
-            "future": "not_legal",
-            "historic": "legal",
-            "timeless": "not_legal",
-            "gladiator": "not_legal",
-            "pioneer": "not_legal",
-            "explorer": "not_legal",
-            "modern": "not_legal",
-            "legacy": "not_legal",
-            "pauper": "not_legal",
-            "vintage": "not_legal",
-            "penny": "not_legal",
-            "commander": "not_legal",
-            "oathbreaker": "not_legal",
-            "standardbrawl": "not_legal",
-            "brawl": "not_legal",
-            "alchemy": "legal",
-            "paupercommander": "not_legal",
-            "duel": "not_legal",
-            "oldschool": "not_legal",
-            "premodern": "not_legal",
-            "predh": "not_legal"
-        },
-        "games": [
-            "arena"
-        ],
-        "reserved": false,
-        "foil": false,
-        "nonfoil": true,
-        "finishes": [
-            "nonfoil"
-        ],
-        "oversized": false,
-        "promo": false,
-        "reprint": false,
-        "variation": false,
-        "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
-        "set": "blb",
-        "set_name": "Bloomburrow",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/b24c3e9c-2aff-45fd-9c87-3ebd33bbe807/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aeb5406e1-c3eb-4434-91f4-308622d3eab4&unique=prints",
-        "collector_number": "A-138",
-        "digital": true,
-        "rarity": "uncommon",
-        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Jakub Kasper",
-        "artist_ids": [
-            "36901417-ce61-4636-8b77-6db14a9cb68a"
-        ],
-        "illustration_id": "fe052f41-65c4-40dc-b004-78ad4367746a",
-        "border_color": "black",
-        "frame": "2015",
-        "security_stamp": "arena",
-        "full_art": false,
-        "textless": false,
-        "booster": false,
-        "story_spotlight": false,
-        "promo_types": [
-            "rebalanced",
-            "alchemy"
-        ],
-        "prices": {
-            "usd": null,
-            "usd_foil": null,
-            "usd_etched": null,
-            "eur": null,
-            "eur_foil": null,
-            "tix": null
-        },
-        "related_uris": {
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Heartfire%2BHero",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Heartfire%2BHero",
-            "edhrec": "https://edhrec.com/route/?cc=A-Heartfire+Hero"
-        }
-    },
-    {
-        "object": "card",
-        "id": "304a2e4c-da2c-43fb-b44d-9db55ff94f04",
-        "oracle_id": "10ab3102-43a3-4c60-8641-2c5a7c1e29c2",
+        "id": "77fe1662-7927-4909-8d25-6924e6fc27eb",
+        "oracle_id": "ebd2b263-f2eb-435a-983e-b54f70c4580d",
         "multiverse_ids": [
-            401804
+            73947
         ],
-        "mtgo_id": 58643,
-        "mtgo_foil_id": 58644,
-        "tcgplayer_id": 105260,
-        "cardmarket_id": 284480,
-        "name": "Akoum Firebird",
+        "tcgplayer_id": 37865,
+        "cardmarket_id": 14884,
+        "name": "Gleemax",
         "lang": "en",
-        "released_at": "2015-10-02",
-        "uri": "https://api.scryfall.com/cards/304a2e4c-da2c-43fb-b44d-9db55ff94f04",
-        "scryfall_uri": "https://scryfall.com/card/bfz/138/akoum-firebird?utm_source=api",
+        "released_at": "2004-11-19",
+        "uri": "https://api.scryfall.com/cards/77fe1662-7927-4909-8d25-6924e6fc27eb",
+        "scryfall_uri": "https://scryfall.com/card/unh/121/gleemax?utm_source=api",
         "layout": "normal",
         "highres_image": true,
         "image_status": "highres_scan",
         "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.jpg?1562906305",
-            "normal": "https://cards.scryfall.io/normal/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.jpg?1562906305",
-            "large": "https://cards.scryfall.io/large/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.jpg?1562906305",
-            "png": "https://cards.scryfall.io/png/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.png?1562906305",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.jpg?1562906305",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/3/0/304a2e4c-da2c-43fb-b44d-9db55ff94f04.jpg?1562906305"
+            "small": "https://cards.scryfall.io/small/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.jpg?1594900466",
+            "normal": "https://cards.scryfall.io/normal/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.jpg?1594900466",
+            "large": "https://cards.scryfall.io/large/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.jpg?1594900466",
+            "png": "https://cards.scryfall.io/png/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.png?1594900466",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.jpg?1594900466",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/7/7/77fe1662-7927-4909-8d25-6924e6fc27eb.jpg?1594900466"
         },
-        "mana_cost": "{2}{R}{R}",
-        "cmc": 4.0,
-        "type_line": "Creature — Phoenix",
-        "oracle_text": "Flying, haste\nAkoum Firebird attacks each combat if able.\nLandfall — Whenever a land you control enters, you may pay {4}{R}{R}. If you do, return Akoum Firebird from your graveyard to the battlefield.",
-        "power": "3",
-        "toughness": "3",
-        "colors": [
-            "R"
-        ],
-        "color_identity": [
-            "R"
-        ],
-        "keywords": [
-            "Landfall",
-            "Flying",
-            "Haste"
-        ],
+        "mana_cost": "{1000000}",
+        "cmc": 1000000.0,
+        "type_line": "Legendary Artifact",
+        "oracle_text": "You choose all targets for all spells and abilities.",
+        "colors": [],
+        "color_identity": [],
+        "keywords": [],
         "legalities": {
             "standard": "not_legal",
             "future": "not_legal",
             "historic": "not_legal",
             "timeless": "not_legal",
             "gladiator": "not_legal",
-            "pioneer": "legal",
+            "pioneer": "not_legal",
             "explorer": "not_legal",
-            "modern": "legal",
-            "legacy": "legal",
+            "modern": "not_legal",
+            "legacy": "not_legal",
             "pauper": "not_legal",
-            "vintage": "legal",
-            "penny": "legal",
-            "commander": "legal",
-            "oathbreaker": "legal",
+            "vintage": "not_legal",
+            "penny": "not_legal",
+            "commander": "not_legal",
+            "oathbreaker": "not_legal",
             "standardbrawl": "not_legal",
             "brawl": "not_legal",
             "alchemy": "not_legal",
             "paupercommander": "not_legal",
-            "duel": "legal",
+            "duel": "not_legal",
             "oldschool": "not_legal",
             "premodern": "not_legal",
             "predh": "not_legal"
         },
         "games": [
-            "paper",
-            "mtgo"
+            "paper"
         ],
         "reserved": false,
-        "foil": true,
+        "foil": false,
         "nonfoil": true,
         "finishes": [
-            "nonfoil",
-            "foil"
+            "nonfoil"
         ],
         "oversized": false,
         "promo": false,
         "reprint": false,
         "variation": false,
-        "set_id": "91719374-7ac5-4afa-ada8-5da964dcf1d4",
-        "set": "bfz",
-        "set_name": "Battle for Zendikar",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/91719374-7ac5-4afa-ada8-5da964dcf1d4",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Abfz&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/bfz?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/304a2e4c-da2c-43fb-b44d-9db55ff94f04/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A10ab3102-43a3-4c60-8641-2c5a7c1e29c2&unique=prints",
-        "collector_number": "138",
-        "digital": false,
-        "rarity": "mythic",
-        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Chris Rahn",
-        "artist_ids": [
-            "7742047e-0f80-4c0f-a530-d07460165e86"
-        ],
-        "illustration_id": "8916ac70-dfa7-40e1-b802-8854a655279e",
-        "border_color": "black",
-        "frame": "2015",
-        "security_stamp": "oval",
-        "full_art": false,
-        "textless": false,
-        "booster": true,
-        "story_spotlight": false,
-        "edhrec_rank": 14578,
-        "penny_rank": 4498,
-        "prices": {
-            "usd": "0.29",
-            "usd_foil": "0.40",
-            "usd_etched": null,
-            "eur": "0.40",
-            "eur_foil": "0.79",
-            "tix": "0.02"
-        },
-        "related_uris": {
-            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=401804&printed=false",
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAkoum%2BFirebird",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAkoum%2BFirebird",
-            "edhrec": "https://edhrec.com/route/?cc=Akoum+Firebird"
-        },
-        "purchase_uris": {
-            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F105260%3Fpage%3D1",
-            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Battle-for-Zendikar/Akoum-Firebird?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-            "cardhoarder": "https://www.cardhoarder.com/cards/58643?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
-        }
-    },
-    {
-        "object": "card",
-        "id": "7a58c77f-7c15-44f4-8011-6046482a2d08",
-        "oracle_id": "c6861c50-d336-4352-a76d-ec22a86ec09e",
-        "multiverse_ids": [
-            457236
-        ],
-        "mtgo_id": 71184,
-        "arena_id": 69220,
-        "tcgplayer_id": 182953,
-        "cardmarket_id": 368102,
-        "name": "Amplifire",
-        "lang": "en",
-        "released_at": "2019-01-25",
-        "uri": "https://api.scryfall.com/cards/7a58c77f-7c15-44f4-8011-6046482a2d08",
-        "scryfall_uri": "https://scryfall.com/card/rna/92/amplifire?utm_source=api",
-        "layout": "normal",
-        "highres_image": true,
-        "image_status": "highres_scan",
-        "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780",
-            "normal": "https://cards.scryfall.io/normal/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780",
-            "large": "https://cards.scryfall.io/large/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780",
-            "png": "https://cards.scryfall.io/png/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.png?1584830780",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780"
-        },
-        "mana_cost": "{2}{R}{R}",
-        "cmc": 4.0,
-        "type_line": "Creature — Elemental",
-        "oracle_text": "At the beginning of your upkeep, reveal cards from the top of your library until you reveal a creature card. Until your next turn, Amplifire's base power becomes twice that card's power and its base toughness becomes twice that card's toughness. Put the revealed cards on the bottom of your library in a random order.",
-        "power": "1",
-        "toughness": "1",
-        "colors": [
-            "R"
-        ],
-        "color_identity": [
-            "R"
-        ],
-        "keywords": [],
-        "legalities": {
-            "standard": "not_legal",
-            "future": "not_legal",
-            "historic": "legal",
-            "timeless": "legal",
-            "gladiator": "legal",
-            "pioneer": "legal",
-            "explorer": "legal",
-            "modern": "legal",
-            "legacy": "legal",
-            "pauper": "not_legal",
-            "vintage": "legal",
-            "penny": "legal",
-            "commander": "legal",
-            "oathbreaker": "legal",
-            "standardbrawl": "not_legal",
-            "brawl": "legal",
-            "alchemy": "not_legal",
-            "paupercommander": "not_legal",
-            "duel": "legal",
-            "oldschool": "not_legal",
-            "premodern": "not_legal",
-            "predh": "not_legal"
-        },
-        "games": [
-            "arena",
-            "paper",
-            "mtgo"
-        ],
-        "reserved": false,
-        "foil": true,
-        "nonfoil": true,
-        "finishes": [
-            "nonfoil",
-            "foil"
-        ],
-        "oversized": false,
-        "promo": false,
-        "reprint": false,
-        "variation": false,
-        "set_id": "97a7fd84-8d89-45a3-b48b-c951f6a3f9f1",
-        "set": "rna",
-        "set_name": "Ravnica Allegiance",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/97a7fd84-8d89-45a3-b48b-c951f6a3f9f1",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Arna&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/rna?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/7a58c77f-7c15-44f4-8011-6046482a2d08/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ac6861c50-d336-4352-a76d-ec22a86ec09e&unique=prints",
-        "collector_number": "92",
+        "set_id": "4c8bc76a-05a5-43db-aaf0-34deb347b871",
+        "set": "unh",
+        "set_name": "Unhinged",
+        "set_type": "funny",
+        "set_uri": "https://api.scryfall.com/sets/4c8bc76a-05a5-43db-aaf0-34deb347b871",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aunh&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/unh?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/77fe1662-7927-4909-8d25-6924e6fc27eb/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aebd2b263-f2eb-435a-983e-b54f70c4580d&unique=prints",
+        "collector_number": "121",
         "digital": false,
         "rarity": "rare",
+        "flavor_text": "Help us . . . R&D under mental domination of alien brain in jar . . . only chance . . . Gleemax's blatant disregard for flavor text . . . send help!",
         "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Dan Murayama Scott",
+        "artist": "Richard Thomas",
         "artist_ids": [
-            "f852fa13-137e-40f2-bbc1-0f01df09c0e0"
+            "596b3aac-b331-4e1e-ae41-9ec2d3b653e1"
         ],
-        "illustration_id": "86fce992-2e43-4491-9a5a-646683c2a926",
-        "border_color": "black",
-        "frame": "2015",
-        "security_stamp": "oval",
+        "illustration_id": "7f6ba6a2-d3a8-47ce-ba1c-c1c63c86c2ce",
+        "border_color": "silver",
+        "frame": "2003",
         "full_art": false,
         "textless": false,
         "booster": true,
         "story_spotlight": false,
-        "edhrec_rank": 20988,
-        "penny_rank": 13184,
-        "preview": {
-            "source": "Thundermo",
-            "source_uri": "https://twitter.com/Thundermo_HK/status/1080709562158796802",
-            "previewed_at": "2019-01-03"
-        },
         "prices": {
-            "usd": "0.09",
-            "usd_foil": "0.13",
+            "usd": "5.86",
+            "usd_foil": null,
             "usd_etched": null,
-            "eur": "0.09",
-            "eur_foil": "0.33",
-            "tix": "0.02"
+            "eur": "2.45",
+            "eur_foil": null,
+            "tix": null
         },
         "related_uris": {
-            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=457236&printed=false",
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAmplifire",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAmplifire",
-            "edhrec": "https://edhrec.com/route/?cc=Amplifire"
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=73947&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DGleemax",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DGleemax",
+            "edhrec": "https://edhrec.com/route/?cc=Gleemax"
         },
         "purchase_uris": {
-            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F182953%3Fpage%3D1",
-            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Ravnica-Allegiance/Amplifire?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-            "cardhoarder": "https://www.cardhoarder.com/cards/71184?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F37865%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Unhinged/Gleemax?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Gleemax&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
         }
     },
     {
         "object": "card",
-        "id": "a7af8350-9a51-437c-a55e-19f3e07acfa9",
-        "oracle_id": "1a587b8d-fcb4-47ca-9689-610897117166",
+        "id": "e8241a53-8b88-474e-a46c-44b3d1f3b0df",
+        "oracle_id": "6b3d54a0-278a-4785-a508-8ed928425356",
         "multiverse_ids": [
-            21253
+            74323
         ],
-        "mtgo_id": 16052,
-        "mtgo_foil_id": 16053,
-        "tcgplayer_id": 7911,
-        "cardmarket_id": 3113,
-        "name": "Angelfire Crusader",
+        "tcgplayer_id": 37898,
+        "cardmarket_id": 14887,
+        "name": "Mox Lotus",
         "lang": "en",
-        "released_at": "2001-06-04",
-        "uri": "https://api.scryfall.com/cards/a7af8350-9a51-437c-a55e-19f3e07acfa9",
-        "scryfall_uri": "https://scryfall.com/card/apc/1/angelfire-crusader?utm_source=api",
+        "released_at": "2004-11-19",
+        "uri": "https://api.scryfall.com/cards/e8241a53-8b88-474e-a46c-44b3d1f3b0df",
+        "scryfall_uri": "https://scryfall.com/card/unh/124/mox-lotus?utm_source=api",
         "layout": "normal",
         "highres_image": true,
         "image_status": "highres_scan",
         "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732",
-            "normal": "https://cards.scryfall.io/normal/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732",
-            "large": "https://cards.scryfall.io/large/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732",
-            "png": "https://cards.scryfall.io/png/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.png?1562934732",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/a/7/a7af8350-9a51-437c-a55e-19f3e07acfa9.jpg?1562934732"
+            "small": "https://cards.scryfall.io/small/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.jpg?1720467988",
+            "normal": "https://cards.scryfall.io/normal/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.jpg?1720467988",
+            "large": "https://cards.scryfall.io/large/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.jpg?1720467988",
+            "png": "https://cards.scryfall.io/png/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.png?1720467988",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.jpg?1720467988",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/e/8/e8241a53-8b88-474e-a46c-44b3d1f3b0df.jpg?1720467988"
         },
-        "mana_cost": "{3}{W}",
-        "cmc": 4.0,
-        "type_line": "Creature — Human Soldier Knight",
-        "oracle_text": "{R}: Angelfire Crusader gets +1/+0 until end of turn.",
-        "power": "2",
-        "toughness": "3",
-        "colors": [
-            "W"
-        ],
-        "color_identity": [
+        "mana_cost": "{15}",
+        "cmc": 15.0,
+        "type_line": "Artifact",
+        "oracle_text": "{T}: Add {∞}.\n{100}: Add one mana of any color.",
+        "colors": [],
+        "color_identity": [],
+        "keywords": [],
+        "produced_mana": [
+            "B",
+            "G",
             "R",
+            "U",
             "W"
         ],
-        "keywords": [],
         "legalities": {
             "standard": "not_legal",
             "future": "not_legal",
@@ -577,8 +161,148 @@
             "pioneer": "not_legal",
             "explorer": "not_legal",
             "modern": "not_legal",
+            "legacy": "not_legal",
+            "pauper": "not_legal",
+            "vintage": "not_legal",
+            "penny": "not_legal",
+            "commander": "not_legal",
+            "oathbreaker": "not_legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "not_legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "games": [
+            "paper"
+        ],
+        "reserved": false,
+        "foil": false,
+        "nonfoil": true,
+        "finishes": [
+            "nonfoil"
+        ],
+        "oversized": false,
+        "promo": false,
+        "reprint": false,
+        "variation": false,
+        "set_id": "4c8bc76a-05a5-43db-aaf0-34deb347b871",
+        "set": "unh",
+        "set_name": "Unhinged",
+        "set_type": "funny",
+        "set_uri": "https://api.scryfall.com/sets/4c8bc76a-05a5-43db-aaf0-34deb347b871",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aunh&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/unh?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/e8241a53-8b88-474e-a46c-44b3d1f3b0df/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A6b3d54a0-278a-4785-a508-8ed928425356&unique=prints",
+        "collector_number": "124",
+        "digital": false,
+        "rarity": "rare",
+        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "artist": "Kevin Dobler",
+        "artist_ids": [
+            "cb0c7f55-a2ff-44dd-8e78-3a1d1b55b209"
+        ],
+        "illustration_id": "c5b6e460-6b16-4216-aaa9-9ca8c1a76172",
+        "border_color": "silver",
+        "frame": "2003",
+        "full_art": false,
+        "textless": false,
+        "booster": true,
+        "story_spotlight": false,
+        "prices": {
+            "usd": "21.53",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "9.91",
+            "eur_foil": null,
+            "tix": null
+        },
+        "related_uris": {
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=74323&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DMox%2BLotus",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DMox%2BLotus",
+            "edhrec": "https://edhrec.com/route/?cc=Mox+Lotus"
+        },
+        "purchase_uris": {
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F37898%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Unhinged/Mox-Lotus?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Mox+Lotus&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        }
+    },
+    {
+        "object": "card",
+        "id": "9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4",
+        "oracle_id": "b90d2f4d-b4ea-40af-aea0-1ab4234ab80f",
+        "multiverse_ids": [
+            193535
+        ],
+        "mtgo_id": 36510,
+        "mtgo_foil_id": 36511,
+        "tcgplayer_id": 34705,
+        "cardmarket_id": 22505,
+        "name": "Spawnsire of Ulamog",
+        "lang": "en",
+        "released_at": "2010-04-23",
+        "uri": "https://api.scryfall.com/cards/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4",
+        "scryfall_uri": "https://scryfall.com/card/roe/11/spawnsire-of-ulamog?utm_source=api",
+        "layout": "normal",
+        "highres_image": true,
+        "image_status": "highres_scan",
+        "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825",
+            "normal": "https://cards.scryfall.io/normal/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825",
+            "large": "https://cards.scryfall.io/large/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825",
+            "png": "https://cards.scryfall.io/png/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.png?1562706825",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg?1562706825"
+        },
+        "mana_cost": "{10}",
+        "cmc": 10.0,
+        "type_line": "Creature — Eldrazi",
+        "oracle_text": "Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent of their choice.)\n{4}: Create two 0/1 colorless Eldrazi Spawn creature tokens. They have \"Sacrifice this creature: Add {C}.\"\n{20}: Cast any number of Eldrazi spells from among cards you own outside the game without paying their mana costs.",
+        "power": "7",
+        "toughness": "11",
+        "colors": [],
+        "color_identity": [],
+        "keywords": [
+            "Annihilator"
+        ],
+        "produced_mana": [
+            "C"
+        ],
+        "all_parts": [
+            {
+                "object": "related_card",
+                "id": "d0da4f8d-cce9-4d08-8d11-792e0b2af7d0",
+                "component": "token",
+                "name": "Eldrazi Spawn",
+                "type_line": "Token Creature — Eldrazi Spawn",
+                "uri": "https://api.scryfall.com/cards/d0da4f8d-cce9-4d08-8d11-792e0b2af7d0"
+            },
+            {
+                "object": "related_card",
+                "id": "9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4",
+                "component": "combo_piece",
+                "name": "Spawnsire of Ulamog",
+                "type_line": "Creature — Eldrazi",
+                "uri": "https://api.scryfall.com/cards/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4"
+            }
+        ],
+        "legalities": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
             "legacy": "legal",
-            "pauper": "legal",
+            "pauper": "not_legal",
             "vintage": "legal",
             "penny": "legal",
             "commander": "legal",
@@ -586,10 +310,10 @@
             "standardbrawl": "not_legal",
             "brawl": "not_legal",
             "alchemy": "not_legal",
-            "paupercommander": "legal",
+            "paupercommander": "not_legal",
             "duel": "legal",
             "oldschool": "not_legal",
-            "premodern": "legal",
+            "premodern": "not_legal",
             "predh": "legal"
         },
         "games": [
@@ -607,83 +331,213 @@
         "promo": false,
         "reprint": false,
         "variation": false,
-        "set_id": "e4e00913-d08d-4899-86ea-5cf631e09ce0",
-        "set": "apc",
-        "set_name": "Apocalypse",
+        "set_id": "eadb8a82-ec56-4623-b50e-42e7e60cb535",
+        "set": "roe",
+        "set_name": "Rise of the Eldrazi",
         "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/e4e00913-d08d-4899-86ea-5cf631e09ce0",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aapc&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/apc?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/a7af8350-9a51-437c-a55e-19f3e07acfa9/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A1a587b8d-fcb4-47ca-9689-610897117166&unique=prints",
-        "collector_number": "1",
+        "set_uri": "https://api.scryfall.com/sets/eadb8a82-ec56-4623-b50e-42e7e60cb535",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aroe&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/roe?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab90d2f4d-b4ea-40af-aea0-1ab4234ab80f&unique=prints",
+        "collector_number": "11",
         "digital": false,
-        "rarity": "common",
-        "flavor_text": "Nothing burns hotter than the fires of holy rage.",
+        "rarity": "rare",
         "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Edward P. Beard, Jr.",
+        "artist": "Izzy",
         "artist_ids": [
-            "b845b8ee-aeea-4822-bcf9-7230625ac95c"
+            "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
         ],
-        "illustration_id": "31193bce-8639-4d08-a22f-257727c577d5",
+        "illustration_id": "5e026911-067b-44b2-8d03-fcb02b82d996",
         "border_color": "black",
-        "frame": "1997",
+        "frame": "2003",
         "full_art": false,
         "textless": false,
         "booster": true,
         "story_spotlight": false,
-        "edhrec_rank": 27858,
+        "edhrec_rank": 8435,
+        "penny_rank": 5086,
         "prices": {
-            "usd": "0.09",
-            "usd_foil": "0.40",
+            "usd": "12.63",
+            "usd_foil": "59.03",
             "usd_etched": null,
-            "eur": "0.04",
-            "eur_foil": "0.57",
-            "tix": "0.09"
+            "eur": "7.28",
+            "eur_foil": "19.69",
+            "tix": "0.02"
         },
         "related_uris": {
-            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=21253&printed=false",
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAngelfire%2BCrusader",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAngelfire%2BCrusader",
-            "edhrec": "https://edhrec.com/route/?cc=Angelfire+Crusader"
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=193535&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSpawnsire%2Bof%2BUlamog",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSpawnsire%2Bof%2BUlamog",
+            "edhrec": "https://edhrec.com/route/?cc=Spawnsire+of+Ulamog"
         },
         "purchase_uris": {
-            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F7911%3Fpage%3D1",
-            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Apocalypse/Angelfire-Crusader?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-            "cardhoarder": "https://www.cardhoarder.com/cards/16052?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F34705%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Rise-of-the-Eldrazi/Spawnsire-of-Ulamog?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards/36510?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
         }
     },
     {
         "object": "card",
-        "id": "8ba4c7a2-6243-43ed-8c1c-e3edee43a583",
-        "oracle_id": "29e1c6e3-d76e-4388-b4e9-f732fdec4338",
+        "id": "71dd3c27-e0d5-434e-a0f3-4a95245e21c2",
+        "oracle_id": "3ea060d8-449c-4a5e-8883-b45bd7707b5b",
         "multiverse_ids": [
-            535000
+            669106
         ],
-        "mtgo_id": 93414,
-        "arena_id": 78571,
-        "tcgplayer_id": 248206,
-        "cardmarket_id": 575082,
-        "name": "Angelfire Ignition",
+        "mtgo_id": 129629,
+        "arena_id": 91728,
+        "tcgplayer_id": 559123,
+        "cardmarket_id": 778359,
+        "name": "Season of Gathering",
         "lang": "en",
-        "released_at": "2021-09-24",
-        "uri": "https://api.scryfall.com/cards/8ba4c7a2-6243-43ed-8c1c-e3edee43a583",
-        "scryfall_uri": "https://scryfall.com/card/mid/209/angelfire-ignition?utm_source=api",
+        "released_at": "2024-08-02",
+        "uri": "https://api.scryfall.com/cards/71dd3c27-e0d5-434e-a0f3-4a95245e21c2",
+        "scryfall_uri": "https://scryfall.com/card/blb/192/season-of-gathering?utm_source=api",
         "layout": "normal",
         "highres_image": true,
         "image_status": "highres_scan",
         "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.jpg?1636225070",
-            "normal": "https://cards.scryfall.io/normal/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.jpg?1636225070",
-            "large": "https://cards.scryfall.io/large/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.jpg?1636225070",
-            "png": "https://cards.scryfall.io/png/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.png?1636225070",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.jpg?1636225070",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/8/b/8ba4c7a2-6243-43ed-8c1c-e3edee43a583.jpg?1636225070"
+            "small": "https://cards.scryfall.io/small/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924",
+            "normal": "https://cards.scryfall.io/normal/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924",
+            "large": "https://cards.scryfall.io/large/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924",
+            "png": "https://cards.scryfall.io/png/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.png?1721426924",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924"
         },
-        "mana_cost": "{1}{R}{W}",
-        "cmc": 3.0,
+        "mana_cost": "{4}{G}{G}",
+        "cmc": 6.0,
         "type_line": "Sorcery",
-        "oracle_text": "Put two +1/+1 counters on target creature. It gains vigilance, trample, lifelink, indestructible, and haste until end of turn.\nFlashback {2}{R}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+        "oracle_text": "Choose up to five {P} worth of modes. You may choose the same mode more than once.\n{P} — Put a +1/+1 counter on a creature you control. It gains vigilance and trample until end of turn.\n{P}{P} — Choose artifact or enchantment. Destroy all permanents of the chosen type.\n{P}{P}{P} — Draw cards equal to the greatest power among creatures you control.",
+        "colors": [
+            "G"
+        ],
+        "color_identity": [
+            "G"
+        ],
+        "keywords": [],
+        "legalities": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "games": [
+            "paper",
+            "mtgo",
+            "arena"
+        ],
+        "reserved": false,
+        "foil": true,
+        "nonfoil": true,
+        "finishes": [
+            "nonfoil",
+            "foil"
+        ],
+        "oversized": false,
+        "promo": false,
+        "reprint": false,
+        "variation": false,
+        "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+        "set": "blb",
+        "set_name": "Bloomburrow",
+        "set_type": "expansion",
+        "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/71dd3c27-e0d5-434e-a0f3-4a95245e21c2/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A3ea060d8-449c-4a5e-8883-b45bd7707b5b&unique=prints",
+        "collector_number": "192",
+        "digital": false,
+        "rarity": "mythic",
+        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "artist": "A. M. Sartor",
+        "artist_ids": [
+            "d01bfbdc-5442-482a-a339-933e0808c697"
+        ],
+        "illustration_id": "b04ab13a-11d0-4ce1-9e73-434065954f55",
+        "border_color": "black",
+        "frame": "2015",
+        "security_stamp": "oval",
+        "full_art": false,
+        "textless": false,
+        "booster": true,
+        "story_spotlight": false,
+        "edhrec_rank": 3539,
+        "preview": {
+            "source": "Wizards of the Coast",
+            "source_uri": "https://www.instagram.com/mtgfestivals/p/C9VBxdltNiO/",
+            "previewed_at": "2024-07-12"
+        },
+        "prices": {
+            "usd": "4.96",
+            "usd_foil": "4.43",
+            "usd_etched": null,
+            "eur": "5.58",
+            "eur_foil": "5.48",
+            "tix": "0.76"
+        },
+        "related_uris": {
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=669106&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSeason%2Bof%2BGathering",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSeason%2Bof%2BGathering",
+            "edhrec": "https://edhrec.com/route/?cc=Season+of+Gathering"
+        },
+        "purchase_uris": {
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F559123%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Bloomburrow/Season-of-Gathering?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards/129629?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        }
+    },
+    {
+        "object": "card",
+        "id": "578e35b9-7252-4767-a1f3-aecd71256515",
+        "oracle_id": "d71d42e0-cd56-4f53-95ff-ecab7f8c6552",
+        "multiverse_ids": [
+            602741
+        ],
+        "mtgo_id": 106637,
+        "arena_id": 83911,
+        "tcgplayer_id": 478242,
+        "cardmarket_id": 692150,
+        "name": "Nahiri, the Unforgiving",
+        "lang": "en",
+        "released_at": "2023-02-03",
+        "uri": "https://api.scryfall.com/cards/578e35b9-7252-4767-a1f3-aecd71256515",
+        "scryfall_uri": "https://scryfall.com/card/one/211/nahiri-the-unforgiving?utm_source=api",
+        "layout": "normal",
+        "highres_image": true,
+        "image_status": "highres_scan",
+        "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.jpg?1675957205",
+            "normal": "https://cards.scryfall.io/normal/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.jpg?1675957205",
+            "large": "https://cards.scryfall.io/large/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.jpg?1675957205",
+            "png": "https://cards.scryfall.io/png/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.png?1675957205",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.jpg?1675957205",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/5/7/578e35b9-7252-4767-a1f3-aecd71256515.jpg?1675957205"
+        },
+        "mana_cost": "{1}{R}{R/W/P}{W}",
+        "cmc": 4.0,
+        "type_line": "Legendary Planeswalker — Nahiri",
+        "oracle_text": "Compleated ({R/W/P} can be paid with {R}, {W}, or 2 life. If life was paid, this planeswalker enters with two fewer loyalty counters.)\n+1: Until your next turn, up to one target creature attacks a player each combat if able.\n+1: Discard a card, then draw a card.\n0: Exile target creature or Equipment card with mana value less than Nahiri's loyalty from your graveyard. Create a token that's a copy of it. That token gains haste. Exile it at the beginning of the next end step.",
+        "loyalty": "5",
         "colors": [
             "R",
             "W"
@@ -693,11 +547,29 @@
             "W"
         ],
         "keywords": [
-            "Flashback"
+            "Compleated"
+        ],
+        "all_parts": [
+            {
+                "object": "related_card",
+                "id": "fc586e46-b7d0-4c84-8678-3542cd390de1",
+                "component": "token",
+                "name": "Copy",
+                "type_line": "Token",
+                "uri": "https://api.scryfall.com/cards/fc586e46-b7d0-4c84-8678-3542cd390de1"
+            },
+            {
+                "object": "related_card",
+                "id": "73ad9ed5-5cbb-4329-936c-32fefd623eb7",
+                "component": "combo_piece",
+                "name": "Nahiri, the Unforgiving",
+                "type_line": "Legendary Planeswalker — Nahiri",
+                "uri": "https://api.scryfall.com/cards/73ad9ed5-5cbb-4329-936c-32fefd623eb7"
+            }
         ],
         "legalities": {
-            "standard": "not_legal",
-            "future": "not_legal",
+            "standard": "legal",
+            "future": "legal",
             "historic": "legal",
             "timeless": "legal",
             "gladiator": "legal",
@@ -710,7 +582,7 @@
             "penny": "legal",
             "commander": "legal",
             "oathbreaker": "legal",
-            "standardbrawl": "not_legal",
+            "standardbrawl": "legal",
             "brawl": "legal",
             "alchemy": "not_legal",
             "paupercommander": "not_legal",
@@ -720,9 +592,9 @@
             "predh": "not_legal"
         },
         "games": [
-            "arena",
             "paper",
-            "mtgo"
+            "mtgo",
+            "arena"
         ],
         "reserved": false,
         "foil": true,
@@ -735,25 +607,24 @@
         "promo": false,
         "reprint": false,
         "variation": false,
-        "set_id": "44b8eb8f-fa23-401a-98b5-1fbb9871128e",
-        "set": "mid",
-        "set_name": "Innistrad: Midnight Hunt",
+        "set_id": "04bef644-343f-4230-95ee-255f29aa67a2",
+        "set": "one",
+        "set_name": "Phyrexia: All Will Be One",
         "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/44b8eb8f-fa23-401a-98b5-1fbb9871128e",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amid&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/mid?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/8ba4c7a2-6243-43ed-8c1c-e3edee43a583/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A29e1c6e3-d76e-4388-b4e9-f732fdec4338&unique=prints",
-        "collector_number": "209",
+        "set_uri": "https://api.scryfall.com/sets/04bef644-343f-4230-95ee-255f29aa67a2",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aone&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/one?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/578e35b9-7252-4767-a1f3-aecd71256515/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ad71d42e0-cd56-4f53-95ff-ecab7f8c6552&unique=prints",
+        "collector_number": "211",
         "digital": false,
-        "rarity": "rare",
-        "flavor_text": "\"My angel is the flint, and I am her steel.\"",
+        "rarity": "mythic",
         "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Yeong-Hao Han",
+        "artist": "Chase Stone",
         "artist_ids": [
-            "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+            "2d753f61-5f5b-468e-97ea-8e0fdd347340"
         ],
-        "illustration_id": "62ac9cc7-d895-4e2d-9a7e-3f3c13f769c2",
+        "illustration_id": "4cb7b195-eeba-48ad-9f83-6bc9ee25b97e",
         "border_color": "black",
         "frame": "2015",
         "security_stamp": "oval",
@@ -761,84 +632,104 @@
         "textless": false,
         "booster": true,
         "story_spotlight": false,
-        "edhrec_rank": 4184,
-        "penny_rank": 4154,
+        "edhrec_rank": 11423,
+        "penny_rank": 3432,
         "preview": {
-            "source": "CBR.com",
-            "source_uri": "https://www.cbr.com/magic-the-gathering-angelfire-ignition-spell/",
-            "previewed_at": "2021-09-09"
+            "source": "Wizards of the Coast",
+            "source_uri": "https://twitter.com/wizards_magic/status/1615115169415434243",
+            "previewed_at": "2023-01-13"
         },
         "prices": {
-            "usd": "0.47",
-            "usd_foil": "0.63",
+            "usd": "0.31",
+            "usd_foil": "0.58",
             "usd_etched": null,
-            "eur": "0.42",
-            "eur_foil": "0.50",
-            "tix": "0.02"
+            "eur": "0.33",
+            "eur_foil": "0.42",
+            "tix": "0.35"
         },
         "related_uris": {
-            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=535000&printed=false",
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAngelfire%2BIgnition",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAngelfire%2BIgnition",
-            "edhrec": "https://edhrec.com/route/?cc=Angelfire+Ignition"
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=602741&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DNahiri%252C%2Bthe%2BUnforgiving",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DNahiri%252C%2Bthe%2BUnforgiving",
+            "edhrec": "https://edhrec.com/route/?cc=Nahiri%2C+the+Unforgiving"
         },
         "purchase_uris": {
-            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F248206%3Fpage%3D1",
-            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Innistrad-Midnight-Hunt/Angelfire-Ignition?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-            "cardhoarder": "https://www.cardhoarder.com/cards/93414?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F478242%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Phyrexia-All-Will-Be-One/Nahiri-the-Unforgiving?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards/106637?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
         }
     },
     {
         "object": "card",
-        "id": "ae12fd10-c13e-4777-a233-96204ec75ac1",
-        "oracle_id": "762f891e-5d88-42b0-8abf-c69f3421011b",
+        "id": "e8de9fc5-9d0b-456b-8ce4-90e6d76f3838",
+        "oracle_id": "ebd06311-4aa6-4db9-a90a-666cc4e744d1",
         "multiverse_ids": [
-            270801
+            580681
         ],
-        "mtgo_id": 46341,
-        "mtgo_foil_id": 46342,
-        "tcgplayer_id": 66518,
-        "cardmarket_id": 258445,
-        "name": "Annihilating Fire",
+        "tcgplayer_id": 287965,
+        "cardmarket_id": 677276,
+        "name": "Blorbian Buddy",
         "lang": "en",
-        "released_at": "2012-10-05",
-        "uri": "https://api.scryfall.com/cards/ae12fd10-c13e-4777-a233-96204ec75ac1",
-        "scryfall_uri": "https://scryfall.com/card/rtr/85/annihilating-fire?utm_source=api",
+        "released_at": "2022-10-07",
+        "uri": "https://api.scryfall.com/cards/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838",
+        "scryfall_uri": "https://scryfall.com/card/unf/131/blorbian-buddy?utm_source=api",
         "layout": "normal",
         "highres_image": true,
         "image_status": "highres_scan",
         "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.jpg?1562791532",
-            "normal": "https://cards.scryfall.io/normal/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.jpg?1562791532",
-            "large": "https://cards.scryfall.io/large/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.jpg?1562791532",
-            "png": "https://cards.scryfall.io/png/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.png?1562791532",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.jpg?1562791532",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/a/e/ae12fd10-c13e-4777-a233-96204ec75ac1.jpg?1562791532"
+            "small": "https://cards.scryfall.io/small/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.jpg?1673914545",
+            "normal": "https://cards.scryfall.io/normal/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.jpg?1673914545",
+            "large": "https://cards.scryfall.io/large/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.jpg?1673914545",
+            "png": "https://cards.scryfall.io/png/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.png?1673914545",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.jpg?1673914545",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/e/8/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838.jpg?1673914545"
         },
-        "mana_cost": "{1}{R}{R}",
-        "cmc": 3.0,
-        "type_line": "Instant",
-        "oracle_text": "Annihilating Fire deals 3 damage to any target. If a creature dealt damage this way would die this turn, exile it instead.",
+        "mana_cost": "{G}",
+        "cmc": 1.0,
+        "type_line": "Creature — Alien Guest",
+        "oracle_text": "Trample\n{G}, {T}: You get {TK} (a ticket counter).",
+        "power": "1",
+        "toughness": "1",
         "colors": [
-            "R"
+            "G"
         ],
         "color_identity": [
-            "R"
+            "G"
         ],
-        "keywords": [],
+        "keywords": [
+            "Trample"
+        ],
+        "all_parts": [
+            {
+                "object": "related_card",
+                "id": "53899f04-d0b5-464c-bac9-c3e9490ed127",
+                "component": "combo_piece",
+                "name": "Blorbian Buddy",
+                "type_line": "Creature — Alien Guest",
+                "uri": "https://api.scryfall.com/cards/53899f04-d0b5-464c-bac9-c3e9490ed127"
+            },
+            {
+                "object": "related_card",
+                "id": "52942a5c-0552-4a9b-9c0f-7a9ffd04d0af",
+                "component": "combo_piece",
+                "name": "Ticket Bucket-Bot",
+                "type_line": "Card",
+                "uri": "https://api.scryfall.com/cards/52942a5c-0552-4a9b-9c0f-7a9ffd04d0af"
+            }
+        ],
         "legalities": {
             "standard": "not_legal",
             "future": "not_legal",
             "historic": "not_legal",
             "timeless": "not_legal",
             "gladiator": "not_legal",
-            "pioneer": "legal",
+            "pioneer": "not_legal",
             "explorer": "not_legal",
-            "modern": "legal",
+            "modern": "not_legal",
             "legacy": "legal",
             "pauper": "legal",
             "vintage": "legal",
-            "penny": "legal",
+            "penny": "not_legal",
             "commander": "legal",
             "oathbreaker": "legal",
             "standardbrawl": "not_legal",
@@ -851,8 +742,7 @@
             "predh": "not_legal"
         },
         "games": [
-            "paper",
-            "mtgo"
+            "paper"
         ],
         "reserved": false,
         "foil": true,
@@ -865,186 +755,50 @@
         "promo": false,
         "reprint": false,
         "variation": false,
-        "set_id": "80b2374d-c5f1-403e-9772-f6c806fd275e",
-        "set": "rtr",
-        "set_name": "Return to Ravnica",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/80b2374d-c5f1-403e-9772-f6c806fd275e",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Artr&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/rtr?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/ae12fd10-c13e-4777-a233-96204ec75ac1/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A762f891e-5d88-42b0-8abf-c69f3421011b&unique=prints",
-        "collector_number": "85",
+        "set_id": "b314f553-8f07-4ba9-96c8-16be7784eff3",
+        "set": "unf",
+        "set_name": "Unfinity",
+        "set_type": "funny",
+        "set_uri": "https://api.scryfall.com/sets/b314f553-8f07-4ba9-96c8-16be7784eff3",
+        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aunf&unique=prints",
+        "scryfall_set_uri": "https://scryfall.com/sets/unf?utm_source=api",
+        "rulings_uri": "https://api.scryfall.com/cards/e8de9fc5-9d0b-456b-8ce4-90e6d76f3838/rulings",
+        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aebd06311-4aa6-4db9-a90a-666cc4e744d1&unique=prints",
+        "collector_number": "131",
         "digital": false,
         "rarity": "common",
-        "flavor_text": "\"The most impressive performances can be done only once.\"\n—Mote, Rakdos madcap",
+        "flavor_text": "When Captain Nebula tragically destroyed the planet Blorb-12 in a parking accident, Myra compensated the survivors with lifetime passes.",
         "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Clint Cearley",
+        "artist": "Ernanda Souza",
         "artist_ids": [
-            "03b75350-d5a0-4e3a-b3b4-8d4a5554385b"
+            "e87a8b19-f97f-4df0-9dda-1310ab0257bb"
         ],
-        "illustration_id": "1e1693c0-c556-4455-8bcc-cf32587e8d5f",
+        "illustration_id": "653678c0-3f7b-4be3-b1b2-4dd0c8c4f483",
         "border_color": "black",
-        "frame": "2003",
+        "frame": "2015",
         "full_art": false,
         "textless": false,
         "booster": true,
         "story_spotlight": false,
-        "edhrec_rank": 17913,
-        "penny_rank": 12056,
+        "edhrec_rank": 19374,
         "prices": {
-            "usd": "0.06",
-            "usd_foil": "0.30",
+            "usd": "0.04",
+            "usd_foil": "0.02",
             "usd_etched": null,
-            "eur": "0.07",
-            "eur_foil": "0.20",
-            "tix": "0.03"
-        },
-        "related_uris": {
-            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=270801&printed=false",
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAnnihilating%2BFire",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAnnihilating%2BFire",
-            "edhrec": "https://edhrec.com/route/?cc=Annihilating+Fire"
-        },
-        "purchase_uris": {
-            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F66518%3Fpage%3D1",
-            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Return-to-Ravnica/Annihilating-Fire?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-            "cardhoarder": "https://www.cardhoarder.com/cards/46341?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
-        }
-    },
-    {
-        "object": "card",
-        "id": "3d63d37c-34a3-4b63-a6bf-c0f403a3f709",
-        "oracle_id": "247767d2-33a1-4078-9a9d-cf380cb91d58",
-        "multiverse_ids": [],
-        "arena_id": 91355,
-        "name": "A-Radha's Firebrand",
-        "lang": "en",
-        "released_at": "2022-09-09",
-        "uri": "https://api.scryfall.com/cards/3d63d37c-34a3-4b63-a6bf-c0f403a3f709",
-        "scryfall_uri": "https://scryfall.com/card/dmu/A-141/a-radhas-firebrand?utm_source=api",
-        "layout": "normal",
-        "highres_image": true,
-        "image_status": "highres_scan",
-        "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.jpg?1705117356",
-            "normal": "https://cards.scryfall.io/normal/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.jpg?1705117356",
-            "large": "https://cards.scryfall.io/large/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.jpg?1705117356",
-            "png": "https://cards.scryfall.io/png/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.png?1705117356",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.jpg?1705117356",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/3/d/3d63d37c-34a3-4b63-a6bf-c0f403a3f709.jpg?1705117356"
-        },
-        "mana_cost": "{1}{R}",
-        "cmc": 2.0,
-        "type_line": "Creature — Human Warrior",
-        "oracle_text": "Whenever Radha's Firebrand attacks, target creature defending player controls with power less than or equal to Radha's Firebrand's power can't block this turn.\nDomain — {5}{R}: Radha's Firebrand gets +2/+2 until end of turn. This ability costs {1} less to activate for each basic land type among lands you control. Activate only once each turn.",
-        "power": "3",
-        "toughness": "1",
-        "colors": [
-            "R"
-        ],
-        "color_identity": [
-            "R"
-        ],
-        "keywords": [
-            "Domain"
-        ],
-        "all_parts": [
-            {
-                "object": "related_card",
-                "id": "1d20e461-2850-4404-838a-ad2c810100b5",
-                "component": "combo_piece",
-                "name": "Radha's Firebrand",
-                "type_line": "Creature — Human Warrior",
-                "uri": "https://api.scryfall.com/cards/1d20e461-2850-4404-838a-ad2c810100b5"
-            },
-            {
-                "object": "related_card",
-                "id": "3d63d37c-34a3-4b63-a6bf-c0f403a3f709",
-                "component": "combo_piece",
-                "name": "A-Radha's Firebrand",
-                "type_line": "Creature — Human Warrior",
-                "uri": "https://api.scryfall.com/cards/3d63d37c-34a3-4b63-a6bf-c0f403a3f709"
-            }
-        ],
-        "legalities": {
-            "standard": "not_legal",
-            "future": "not_legal",
-            "historic": "legal",
-            "timeless": "not_legal",
-            "gladiator": "not_legal",
-            "pioneer": "not_legal",
-            "explorer": "not_legal",
-            "modern": "not_legal",
-            "legacy": "not_legal",
-            "pauper": "not_legal",
-            "vintage": "not_legal",
-            "penny": "not_legal",
-            "commander": "not_legal",
-            "oathbreaker": "not_legal",
-            "standardbrawl": "not_legal",
-            "brawl": "legal",
-            "alchemy": "not_legal",
-            "paupercommander": "not_legal",
-            "duel": "not_legal",
-            "oldschool": "not_legal",
-            "premodern": "not_legal",
-            "predh": "not_legal"
-        },
-        "games": [
-            "arena"
-        ],
-        "reserved": false,
-        "foil": false,
-        "nonfoil": true,
-        "finishes": [
-            "nonfoil"
-        ],
-        "oversized": false,
-        "promo": false,
-        "reprint": false,
-        "variation": false,
-        "set_id": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
-        "set": "dmu",
-        "set_name": "Dominaria United",
-        "set_type": "expansion",
-        "set_uri": "https://api.scryfall.com/sets/4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
-        "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Admu&unique=prints",
-        "scryfall_set_uri": "https://scryfall.com/sets/dmu?utm_source=api",
-        "rulings_uri": "https://api.scryfall.com/cards/3d63d37c-34a3-4b63-a6bf-c0f403a3f709/rulings",
-        "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A247767d2-33a1-4078-9a9d-cf380cb91d58&unique=prints",
-        "collector_number": "A-141",
-        "digital": true,
-        "rarity": "rare",
-        "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-        "artist": "Ângelo Bortolini",
-        "artist_ids": [
-            "88f42660-2461-4a7a-a43f-a033d64536bd"
-        ],
-        "illustration_id": "6ee8208a-10fa-49a5-b5f8-a2d19540960f",
-        "border_color": "black",
-        "frame": "2015",
-        "security_stamp": "arena",
-        "full_art": false,
-        "textless": false,
-        "booster": false,
-        "story_spotlight": false,
-        "promo_types": [
-            "rebalanced",
-            "alchemy"
-        ],
-        "prices": {
-            "usd": null,
-            "usd_foil": null,
-            "usd_etched": null,
-            "eur": null,
-            "eur_foil": null,
+            "eur": "0.05",
+            "eur_foil": "0.14",
             "tix": null
         },
         "related_uris": {
-            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Radha%2527s%2BFirebrand",
-            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DA-Radha%2527s%2BFirebrand",
-            "edhrec": "https://edhrec.com/route/?cc=A-Radha%27s+Firebrand"
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=580681&printed=false",
+            "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DBlorbian%2BBuddy",
+            "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DBlorbian%2BBuddy",
+            "edhrec": "https://edhrec.com/route/?cc=Blorbian+Buddy"
+        },
+        "purchase_uris": {
+            "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F287965%3Fpage%3D1",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Unfinity/Blorbian-Buddy?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Blorbian+Buddy&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
         }
     }
 ]
