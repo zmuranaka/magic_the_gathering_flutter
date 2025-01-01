@@ -338,6 +338,36 @@ const Map<String, MTGSymbol> mtgSymbology = {
     english: 'one white mana, one blue mana, or 2 life',
     manaValue: 1,
   ),
+  '{C/W}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/CW.svg',
+    looseVariant: null,
+    english: 'one colorless mana or one white mana',
+    manaValue: 1,
+  ),
+  '{C/U}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/CU.svg',
+    looseVariant: null,
+    english: 'one colorless mana or one blue mana',
+    manaValue: 1,
+  ),
+  '{C/B}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/CB.svg',
+    looseVariant: null,
+    english: 'one colorless mana or one black mana',
+    manaValue: 1,
+  ),
+  '{C/R}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/CR.svg',
+    looseVariant: null,
+    english: 'one colorless mana or one red mana',
+    manaValue: 1,
+  ),
+  '{C/G}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/CG.svg',
+    looseVariant: null,
+    english: 'one colorless mana or one green mana',
+    manaValue: 1,
+  ),
   '{2/W}': MTGSymbol(
     image: 'packages/magic_the_gathering_flutter/assets/2W.svg',
     looseVariant: null,
