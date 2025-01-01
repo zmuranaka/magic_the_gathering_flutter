@@ -494,6 +494,18 @@ const Map<String, MTGSymbol> mtgSymbology = {
     english: 'one snow mana',
     manaValue: 1,
   ),
+  '{L}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/L.svg',
+    looseVariant: 'L',
+    english: 'one mana from a legendary source',
+    manaValue: 1,
+  ),
+  '{D}': MTGSymbol(
+    image: 'packages/magic_the_gathering_flutter/assets/D.svg',
+    looseVariant: 'D',
+    english: 'one potential land drop',
+    manaValue: 0,
+  ),
 };
 
 class MTGSymbol extends Equatable {
