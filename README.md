@@ -119,3 +119,7 @@ return Scaffold(
 ```
 
 For a more detailed example, look in the [example](example/) directory.
+
+## Contributing
+
+Contributions are welcome! Be sure to follow the linter rules defined in the [analysis_options](./analysis_options.yaml) file.
