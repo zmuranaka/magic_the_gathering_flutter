@@ -54,16 +54,34 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 
 ### MTGCard
 
+#### Methods
+
 | Method             | Description                                            | Return Type     |
 | :----------------- | :----------------------------------------------------- | :-------------- |
 | preparedManaCost   | Displays the card's mana cost using MTG symbol SVGs    | `List<Widget>?` |
 | preparedOracleText | Displays the card's oracle text using MTG symbol SVGs  | `TextSpan?`     |
+
+#### Properties
 
 | Property           | Description                                            | Return Type     |
 | :----------------- | :----------------------------------------------------- | :-------------- |
 | hasMultipleFaces   | Whether the card object has more than one face         | `bool`          |
 | sizeRatio          | The ratio of an MTG card's height to its width         | `double`        |
 | cornerRatio        | The ratio of an MTG card's height to its corner radius | `int`           |
+
+### MTGSymbol
+
+#### Methods
+
+| Method             | Description                                            | Return Type     |
+| :----------------- | :----------------------------------------------------- | :-------------- |
+| toSvg              | Converts the MTGSymbol object into an SVG widget       | `SVGPicture`    |
+
+#### Properties
+
+| Property           | Description                                            | Return Type     |
+| :----------------- | :----------------------------------------------------- | :-------------- |
+| regex              | Matches text that can be converted to an MTGSymbol     | `RegExp`        |
 
 ## Example
 
