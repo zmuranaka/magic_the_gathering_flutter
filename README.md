@@ -4,11 +4,11 @@ Make developing Magic: The Gathering (MTG) apps a breeze!
 
 Develop custom MTG Flutter widgets easily with full support for MTG mana and other symbols:
 
-![Image showing four example cards](screenshots/screenshot_1.jpg)
+![Image showing four example cards](https://raw.githubusercontent.com/zmuranaka/magic_the_gathering_flutter/refs/heads/main/screenshots/screenshot_1.jpg)
 
 Full support for "Un" sets as well:
 
-![Image showing four example "Un" set cards](screenshots/screenshot_2.jpg)
+![Image showing four example "Un" set cards](https://raw.githubusercontent.com/zmuranaka/magic_the_gathering_flutter/refs/heads/main/screenshots/screenshot_2.jpg)
 
 ## Features
 
@@ -118,8 +118,8 @@ return Scaffold(
 );
 ```
 
-For a more detailed example, look in the [example](example/) directory.
+For a more detailed example, look in the [example](https://github.com/zmuranaka/magic_the_gathering_flutter/tree/main/example) directory.
 
 ## Contributing
 
-Contributions are welcome! Be sure to follow the linter rules defined in the [analysis_options](./analysis_options.yaml) file.
+Contributions are welcome! Be sure to follow the linter rules defined in the [analysis_options](https://github.com/zmuranaka/magic_the_gathering_flutter/blob/main/analysis_options.yaml) file.
