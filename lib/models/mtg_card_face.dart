@@ -6,15 +6,47 @@ import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
 /// Most cards have a single face, but some have multiple faces such as
 /// [Delver of Secrets](https://scryfall.com/card/isd/51/delver-of-secrets-insectile-aberration).
 class MTGCardFace extends Equatable {
+  /// The name of the illustrator of this card face, such as `'Raymond Swanland'`.
   final String? artist;
+
+  /// The flavor text printed on this face, if any.
   final String? flavorText;
+
+  /// A [Map] of image URLs for this face.
   final Map<String, String>? images;
+
+  /// The mana cost for this face. This value should be any empty [String] `''`
+  /// if the cost is absent. Remember that per the game rules, a missing mana
+  /// cost and a mana cost of {0} are different values.
+  ///
+  /// See [preparedManaCost] for a visual representation of this value.
   final String? manaCost;
+
+  /// The mana value of this particular face. This is a [double] because some
+  /// "Un" set cards have fractional mana values.
+  ///
+  /// Due to the inherent inaccuracy of comparing floating point numbers and
+  /// because [manaCost] serves the same purpose,
+  /// [manaValue] is not included in [props].
   final double? manaValue;
+
+  /// The name of this face, such as `'Spawnsire of Ulamog'`.
   final String name;
+
+  /// The Oracle text for this face, if any.
+  ///
+  /// See [preparedOracleText] for a visual representation of this value.
   final String? oracleText;
+
+  /// This face's power, if any. This is a [String] because some cards have
+  /// powers that are not numeric, such as `'*'`.
   final String? power;
+
+  /// This face's toughness, if any. This is a [String] because some cards have
+  /// toughnesses that are not numeric, such as `'*'`.
   final String? toughness;
+
+  /// The type line of this particular face, such as `'Legendary Artifact'`.
   final String typeLine;
 
   /// Convert a map to an [MTGCardFace] instance.

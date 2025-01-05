@@ -512,10 +512,22 @@ const Map<String, MTGSymbol> mtgSymbology = {
 };
 
 /// Represents a single Magic: The Gathering symbol.
+///
+/// See [toSvg] for a visual representation of this symbol.
 class MTGSymbol extends Equatable {
+  /// An English snippet that describes this symbol.
+  /// Appropriate for use in alt text or other accessible communication formats.
   final String english;
+
+  /// The path to the SVG asset that represents this symbol.
   final String image;
+
+  /// An alternate version of this symbol, if it is possible to write it
+  /// without curly braces.
   final String? looseVariant;
+
+  /// The mana value of this symbol, if any. This is a [double] because some
+  /// "Un" set symbols have fractional mana values.
   final double? manaValue;
 
   /// Creates a new [MTGSymbol] instance. [looseVariant] and [manaValue] are
