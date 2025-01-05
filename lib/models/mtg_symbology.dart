@@ -1,6 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_svg/flutter_svg.dart' show SvgPicture;
 
+/// A [Map] representing all of the known Magic: The Gathering symbols.
+/// Symbols are based on the notation used in the game's
+/// [Comprehensive Rules](https://magic.wizards.com/en/rules).
 const Map<String, MTGSymbol> mtgSymbology = {
   '{T}': MTGSymbol(
     image: 'packages/magic_the_gathering_flutter/assets/T.svg',
@@ -508,27 +511,39 @@ const Map<String, MTGSymbol> mtgSymbology = {
   ),
 };
 
+/// Represents a single Magic: The Gathering symbol.
 class MTGSymbol extends Equatable {
   final String english;
   final String image;
   final String? looseVariant;
   final double? manaValue;
 
-  static RegExp get regex => RegExp(r'{[½∞\w\/]+}');
-
-  @override
-  List<Object?> get props => [english, image, looseVariant, manaValue];
-
-  SvgPicture toSvg({double height = 16.0}) => SvgPicture.asset(
-        image,
-        height: height,
-        semanticsLabel: english,
-      );
-
+  /// Creates a new [MTGSymbol] instance. [looseVariant] and [manaValue] are
+  /// optional because not all [MTGSymbol] instances have them.
   const MTGSymbol({
     required this.english,
     required this.image,
     this.looseVariant,
     this.manaValue,
   });
+
+  /// A regular expression used to find MTG symbol syntax in a [String],
+  /// where that is defined as a left curly brace, followed by any number of
+  /// the accepted characters, followed by a right curly brace.
+  ///
+  /// Note that this does not guarantee that the syntax is a valid MTG symbol,
+  /// only that it matches the syntax.
+  static RegExp get regex => RegExp(r'{[½∞\w\/]+}');
+
+  /// Returns a visual representation of the [MTGSymbol] as an [SvgPicture].
+  SvgPicture toSvg({double height = 16.0}) => SvgPicture.asset(
+        image,
+        height: height,
+        semanticsLabel: english,
+      );
+
+  /// The properties used to determine equality between [MTGSymbol] instances
+  /// via the [Equatable] package.
+  @override
+  List<Object?> get props => [english, image, looseVariant, manaValue];
 }

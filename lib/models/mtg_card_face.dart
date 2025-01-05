@@ -2,6 +2,9 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
 
+/// Represents a single face of a Magic: The Gathering card.
+/// Most cards have a single face, but some have multiple faces such as
+/// [Delver of Secrets](https://scryfall.com/card/isd/51/delver-of-secrets-insectile-aberration).
 class MTGCardFace extends Equatable {
   final String? artist;
   final String? flavorText;
@@ -14,20 +17,9 @@ class MTGCardFace extends Equatable {
   final String? toughness;
   final String typeLine;
 
-  /// [manaValue] not included because [manaCost] serves the same purpose.
-  @override
-  List<Object?> get props => [
-        artist,
-        flavorText,
-        images,
-        manaCost,
-        name,
-        oracleText,
-        power,
-        toughness,
-        typeLine,
-      ];
-
+  /// Convert a map to an [MTGCardFace] instance.
+  /// The intended use case is to store or request JSON data and convert that
+  /// to a Dart [Map], then pass that to this constructor.
   MTGCardFace.fromMap(Map m)
       : artist = m['artist'],
         flavorText = m['flavor_text'],
@@ -40,6 +32,7 @@ class MTGCardFace extends Equatable {
         toughness = m['toughness'],
         typeLine = m['type_line'];
 
+  /// Method used to parse [images]. Not intended for external use.
   static Map<String, String>? _images(dynamic value) {
     if (value == null) {
       return null;
@@ -53,9 +46,13 @@ class MTGCardFace extends Equatable {
     return value.cast<String, String>();
   }
 
-  /// Pass null to [padding] to avoid using any padding.
+  /// Returns a visual representation of the [manaCost] using SVGs for valid
+  /// MTG symbols.
+  /// Returns `null` if [manaCost] is `null` or it doesn't contain any valid MTG
+  /// symbols.
   ///
-  /// Defaults to 1.5 padding on each side of the symbol.
+  /// Pass `null` to [padding] to avoid using any padding - otherwise the
+  /// padding will default 1.5 on each horizontal side.
   List<Widget>? preparedManaCost({
     EdgeInsets? padding = const EdgeInsets.symmetric(horizontal: 1.5),
   }) {
@@ -85,6 +82,9 @@ class MTGCardFace extends Equatable {
     return manaCostSymbols;
   }
 
+  /// Returns a visual representation of the [oracleText] using SVGs for valid
+  /// MTG symbols.
+  /// Returns `null` if [oracleText] is `null`.
   TextSpan? preparedOracleText() {
     if (oracleText == null) {
       return null;
@@ -114,4 +114,20 @@ class MTGCardFace extends Equatable {
     children.add(TextSpan(text: oracleText!.substring(lastIndex)));
     return TextSpan(children: children);
   }
+
+  /// The properties used to determine equality between [MTGCardFace] instances
+  /// via the [Equatable] package.
+  /// [manaValue] not included because [manaCost] serves the same purpose.
+  @override
+  List<Object?> get props => [
+        artist,
+        flavorText,
+        images,
+        manaCost,
+        name,
+        oracleText,
+        power,
+        toughness,
+        typeLine,
+      ];
 }
