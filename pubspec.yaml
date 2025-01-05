@@ -1,7 +1,8 @@
 name: magic_the_gathering_flutter
 description: A new Flutter package project.
 version: 1.0.0
-homepage:
+repository: https://github.com/zmuranaka/magic_the_gathering_flutter
+issue_tracker: https://github.com/zmuranaka/magic_the_gathering_flutter/issues
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
