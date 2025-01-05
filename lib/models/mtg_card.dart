@@ -35,7 +35,7 @@ class MTGCard extends MTGCardFace {
   /// Convert a map to an [MTGCard] instance.
   /// The intended use case is to store or request JSON data and convert that
   /// to a Dart [Map], then pass that to this constructor.
-  MTGCard.fromMap(Map m)
+  MTGCard.fromMap(super.m)
       : cardFaces = _cardFaces(m['card_faces']),
         keywords = ((m['keywords'] ?? []) as List).cast<String>(),
         language = m['lang'],
@@ -44,7 +44,7 @@ class MTGCard extends MTGCardFace {
         reserved = m['reserved'],
         setCode = m['set'],
         setName = m['set_name'],
-        super.fromMap(m);
+        super.fromMap();
 
   /// Method used to parse [cardFaces]. Not intended for external use.
   static List<MTGCardFace>? _cardFaces(dynamic value) {
