@@ -1,3 +1,12 @@
+## 1.0.2
+
+* Add `MTGCardFace` fields dartdoc comments
+* Add `MTGCard` fields dartdoc comments
+* Add `MTGSymbol` fields dartdoc comments
+* Bump `flutter_lints: ^5.0.0` and address two new lints
+* Bump `sdk: ^3.6.0`
+* Remove the (currently unused) `flutter_test` as a dev dependency
+
 ## 1.0.1
 
 * Add `rarity` & `releasedAt` to `MTGCard.props`

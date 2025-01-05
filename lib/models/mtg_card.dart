@@ -5,19 +5,37 @@ import 'package:magic_the_gathering_flutter/models/mtg_card_face.dart';
 /// If the card has multiple faces, each of its faces is represented by an
 /// [MTGCardFace] instance in [cardFaces].
 class MTGCard extends MTGCardFace {
+  /// All of the card's faces as a [List] of [MTGCardFace] instances.
+  /// This will be `null` if the card does not have any faces
+  /// (it will never be an empty [List]).
   final List<MTGCardFace>? cardFaces;
+
+  /// A [List] of keywords that this card uses, such as `'Flying'` and
+  /// `'Cumulative upkeep'`.
   final List<String> keywords;
+
+  /// A language code for this printing.
   final String language;
+
+  /// This card's rarity as a [Rarity].
   final Rarity rarity;
+
+  /// The date this card was first released.
   final DateTime releasedAt;
+
+  /// Whether this card is on the Reserved List.
   final bool reserved;
+
+  /// This card's set code, such as `'blb'` for Bloomburrow.
   final String setCode;
+
+  /// This card's full set name, such as `'Bloomburrow'`.
   final String setName;
 
   /// Convert a map to an [MTGCard] instance.
   /// The intended use case is to store or request JSON data and convert that
   /// to a Dart [Map], then pass that to this constructor.
-  MTGCard.fromMap(Map m)
+  MTGCard.fromMap(super.m)
       : cardFaces = _cardFaces(m['card_faces']),
         keywords = ((m['keywords'] ?? []) as List).cast<String>(),
         language = m['lang'],
@@ -26,7 +44,7 @@ class MTGCard extends MTGCardFace {
         reserved = m['reserved'],
         setCode = m['set'],
         setName = m['set_name'],
-        super.fromMap(m);
+        super.fromMap();
 
   /// Method used to parse [cardFaces]. Not intended for external use.
   static List<MTGCardFace>? _cardFaces(dynamic value) {
