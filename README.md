@@ -123,3 +123,10 @@ For a more detailed example, look in the [example](https://github.com/zmuranaka/
 ## Contributing
 
 Contributions are welcome! Be sure to follow the linter rules defined in the [analysis_options](https://github.com/zmuranaka/magic_the_gathering_flutter/blob/main/analysis_options.yaml) file.
+
+## Legal
+
+As part of the [Wizards of the Coast Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy),
+this package is provided free of charge to view, access, share, and use without paying for anything, obtaining any approval, or giving anyone credit.
+
+[magic_the_gathering_flutter](https://pub.dev/packages/magic_the_gathering_flutter) is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.

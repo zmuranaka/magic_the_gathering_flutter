@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Add [Legal](https://pub.dev/packages/magic_the_gathering_flutter#legal) section to the README
+
 ## 1.0.2
 
 * Add `MTGCardFace` fields dartdoc comments
