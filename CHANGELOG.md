@@ -1,3 +1,8 @@
+## 1.0.4
+
+* Remove [equatable](https://pub.dev/packages/equatable) as a dependency. The `==` and `hashCode` for the relevant classes are now manually overridden, using [collection](https://pub.dev/packages/collection) when necessary.
+* Add tests for this equality
+
 ## 1.0.3
 
 * Add [Legal](https://pub.dev/packages/magic_the_gathering_flutter#legal) section to the README
