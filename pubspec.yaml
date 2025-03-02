@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  equatable: ^2.0.7
+  collection: ^1.19.0
   flutter_svg: ^2.0.16
 
 dev_dependencies:

@@ -1,11 +1,11 @@
-import 'package:equatable/equatable.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
 
 /// Represents a single face of a Magic: The Gathering card.
 /// Most cards have a single face, but some have multiple faces such as
 /// [Delver of Secrets](https://scryfall.com/card/isd/51/delver-of-secrets-insectile-aberration).
-class MTGCardFace extends Equatable {
+class MTGCardFace {
   /// The name of the illustrator of this card face, such as `'Raymond Swanland'`.
   final String? artist;
 
@@ -27,7 +27,7 @@ class MTGCardFace extends Equatable {
   ///
   /// Due to the inherent inaccuracy of comparing floating point numbers and
   /// because [manaCost] serves the same purpose,
-  /// [manaValue] is not included in [props].
+  /// [manaValue] is not included in determining equality with [==].
   final double? manaValue;
 
   /// The name of this face, such as `'Spawnsire of Ulamog'`.
@@ -147,19 +147,34 @@ class MTGCardFace extends Equatable {
     return TextSpan(children: children);
   }
 
-  /// The properties used to determine equality between [MTGCardFace] instances
-  /// via the [Equatable] package.
-  /// [manaValue] not included because [manaCost] serves the same purpose.
+  /// [manaValue] not included in determining equality because [manaCost]
+  /// serves the same purpose.
   @override
-  List<Object?> get props => [
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        other is MTGCardFace &&
+            runtimeType == other.runtimeType &&
+            artist == other.artist &&
+            flavorText == other.flavorText &&
+            const DeepCollectionEquality().equals(images, other.images) &&
+            manaCost == other.manaCost &&
+            name == other.name &&
+            oracleText == other.oracleText &&
+            power == other.power &&
+            toughness == other.toughness &&
+            typeLine == other.typeLine;
+  }
+
+  @override
+  int get hashCode => Object.hash(
         artist,
         flavorText,
-        images,
+        const DeepCollectionEquality().hash(images),
         manaCost,
         name,
         oracleText,
         power,
         toughness,
         typeLine,
-      ];
+      );
 }

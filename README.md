@@ -16,7 +16,7 @@ Full support for "Un" sets as well:
 * Double-faced card support
 * Convert JSON to model instances using supported `fromMap` constructor
 * SVGs for all MTG symbols and helpful methods to display them
-* Minimal external dependencies - only [flutter_svg](https://pub.dev/packages/flutter_svg) and [equatable](https://pub.dev/packages/equatable) are used
+* Minimal external dependencies - only [flutter_svg](https://pub.dev/packages/flutter_svg) and [collection](https://pub.dev/packages/collection) are used
 * Works on Android, iOS, Linux, MacOS, Web, Windows
 
 ## Getting started
