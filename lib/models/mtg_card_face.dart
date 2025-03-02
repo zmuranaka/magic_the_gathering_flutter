@@ -147,6 +147,9 @@ class MTGCardFace {
     return TextSpan(children: children);
   }
 
+  /// Allows two instances of [MTGCardFace] to be considered equal if the
+  /// relevant properties are equal.
+  ///
   /// [manaValue] not included in determining equality because [manaCost]
   /// serves the same purpose.
   @override
@@ -165,6 +168,7 @@ class MTGCardFace {
             typeLine == other.typeLine;
   }
 
+  /// Necessary for [==] to work properly.
   @override
   int get hashCode => Object.hash(
         artist,

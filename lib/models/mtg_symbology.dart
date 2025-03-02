@@ -553,6 +553,8 @@ class MTGSymbol {
         semanticsLabel: english,
       );
 
+  /// Allows two instances of [MTGSymbol] to be considered equal if the relevant
+  /// properties are equal.
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
@@ -564,6 +566,7 @@ class MTGSymbol {
             manaValue == other.manaValue;
   }
 
+  /// Necessary for [==] to work properly.
   @override
   int get hashCode => Object.hash(english, image, looseVariant, manaValue);
 }

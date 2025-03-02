@@ -74,6 +74,9 @@ class MTGCard extends MTGCardFace {
   /// See https://draftsim.com/mtg-card-size/
   static const cornerRatio = 28;
 
+  /// Allows two instances of [MTGCard] to be considered equal if the relevant
+  /// properties are equal.
+  ///
   /// [setName] not included because [setCode] serves the same purpose.
   /// [manaValue] not included in determining equality because [manaCost]
   /// serves the same purpose.
@@ -101,6 +104,7 @@ class MTGCard extends MTGCardFace {
         typeLine == other.typeLine;
   }
 
+  /// Necessary for [==] to work properly.
   @override
   int get hashCode {
     const deepEquality = DeepCollectionEquality();
