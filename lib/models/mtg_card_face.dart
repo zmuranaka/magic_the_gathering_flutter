@@ -154,18 +154,19 @@ class MTGCardFace {
   /// serves the same purpose.
   @override
   bool operator ==(Object other) {
-    return identical(this, other) ||
-        other is MTGCardFace &&
-            runtimeType == other.runtimeType &&
-            artist == other.artist &&
-            flavorText == other.flavorText &&
-            const DeepCollectionEquality().equals(images, other.images) &&
-            manaCost == other.manaCost &&
-            name == other.name &&
-            oracleText == other.oracleText &&
-            power == other.power &&
-            toughness == other.toughness &&
-            typeLine == other.typeLine;
+    if (identical(this, other)) return true;
+    const deepEquality = DeepCollectionEquality();
+    return other is MTGCardFace &&
+        runtimeType == other.runtimeType &&
+        artist == other.artist &&
+        flavorText == other.flavorText &&
+        deepEquality.equals(images, other.images) &&
+        manaCost == other.manaCost &&
+        name == other.name &&
+        oracleText == other.oracleText &&
+        power == other.power &&
+        toughness == other.toughness &&
+        typeLine == other.typeLine;
   }
 
   /// Necessary for [==] to work properly.
