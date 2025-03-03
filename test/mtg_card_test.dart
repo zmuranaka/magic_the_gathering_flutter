@@ -36,90 +36,90 @@ void main() {
         'cmc': 6.0,
       };
       test('MTGCard is equal to itself', () {
-        final cardFace = MTGCard.fromMap(mtgCardJson);
-        expect(cardFace, equals(cardFace));
+        final mtgCard = MTGCard.fromMap(mtgCardJson);
+        expect(mtgCard, equals(mtgCard));
       });
       test('MTGCard with same properties are equal', () {
-        final cardFace1 = MTGCard.fromMap(mtgCardJson);
-        final cardFace2 = MTGCard.fromMap(mtgCardJson);
-        expect(cardFace1, equals(cardFace2));
+        final mtgCard1 = MTGCard.fromMap(mtgCardJson);
+        final mtgCard2 = MTGCard.fromMap(mtgCardJson);
+        expect(mtgCard1, equals(mtgCard2));
       });
       test(
         'MTGCard equality ignores non-equality of irrelevant parameters',
         () {
-          final cardFace1 = MTGCard.fromMap(mtgCardJson);
-          final cardFace2 = MTGCard.fromMap(
+          final mtgCard1 = MTGCard.fromMap(mtgCardJson);
+          final mtgCard2 = MTGCard.fromMap(
             mtgCardJson..['some_other_key'] = 'new text',
           );
-          expect(cardFace1, equals(cardFace2));
+          expect(mtgCard1, equals(mtgCard2));
         },
       );
       test('MTGCard with different properties are not equal', () {
-        final cardFace1 = MTGCard.fromMap(mtgCardJson);
-        final cardFace2 = MTGCard.fromMap(
+        final mtgCard1 = MTGCard.fromMap(mtgCardJson);
+        final mtgCard2 = MTGCard.fromMap(
           mtgCardJson..['keywords'] = ['different text'],
         );
-        final cardFace3 = MTGCard.fromMap(
+        final mtgCard3 = MTGCard.fromMap(
           mtgCardJson..['lang'] = 'different text',
         );
-        final cardFace4 = MTGCard.fromMap(
+        final mtgCard4 = MTGCard.fromMap(
           mtgCardJson..['rarity'] = 'common',
         );
-        final cardFace5 = MTGCard.fromMap(
+        final mtgCard5 = MTGCard.fromMap(
           mtgCardJson..['released_at'] = '1900-01-01',
         );
-        final cardFace6 = MTGCard.fromMap(
+        final mtgCard6 = MTGCard.fromMap(
           mtgCardJson..['reserved'] = true,
         );
-        final cardFace7 = MTGCard.fromMap(
+        final mtgCard7 = MTGCard.fromMap(
           mtgCardJson..['set'] = 'different text',
         );
-        final cardFace8 = MTGCard.fromMap(
+        final mtgCard8 = MTGCard.fromMap(
           mtgCardJson..['set_name'] = 'different text',
         );
-        final cardFace9 = MTGCard.fromMap(
+        final mtgCard9 = MTGCard.fromMap(
           mtgCardJson..['artist'] = 'different text',
         );
-        final cardFace10 = MTGCard.fromMap(
+        final mtgCard10 = MTGCard.fromMap(
           mtgCardJson..['image_uris'] = null,
         );
-        final cardFace11 = MTGCard.fromMap(
+        final mtgCard11 = MTGCard.fromMap(
           mtgCardJson..['mana_cost'] = 'different text',
         );
-        final cardFace12 = MTGCard.fromMap(
+        final mtgCard12 = MTGCard.fromMap(
           mtgCardJson..['name'] = 'different text',
         );
-        final cardFace13 = MTGCard.fromMap(
+        final mtgCard13 = MTGCard.fromMap(
           mtgCardJson..['oracle_text'] = 'different text',
         );
-        final cardFace14 = MTGCard.fromMap(
+        final mtgCard14 = MTGCard.fromMap(
           mtgCardJson..['power'] = 'different text',
         );
-        final cardFace15 = MTGCard.fromMap(
+        final mtgCard15 = MTGCard.fromMap(
           mtgCardJson..['toughness'] = 'different text',
         );
-        final cardFace16 = MTGCard.fromMap(
+        final mtgCard16 = MTGCard.fromMap(
           mtgCardJson..['type_line'] = 'different text',
         );
-        final cardFace17 = MTGCard.fromMap(
+        final mtgCard17 = MTGCard.fromMap(
           mtgCardJson..['cmc'] = 1.0,
         );
-        expect(cardFace1, isNot(equals(cardFace2)));
-        expect(cardFace1, isNot(equals(cardFace3)));
-        expect(cardFace1, isNot(equals(cardFace4)));
-        expect(cardFace1, isNot(equals(cardFace5)));
-        expect(cardFace1, isNot(equals(cardFace6)));
-        expect(cardFace1, isNot(equals(cardFace7)));
-        expect(cardFace1, isNot(equals(cardFace8)));
-        expect(cardFace1, isNot(equals(cardFace9)));
-        expect(cardFace1, isNot(equals(cardFace10)));
-        expect(cardFace1, isNot(equals(cardFace11)));
-        expect(cardFace1, isNot(equals(cardFace12)));
-        expect(cardFace1, isNot(equals(cardFace13)));
-        expect(cardFace1, isNot(equals(cardFace14)));
-        expect(cardFace1, isNot(equals(cardFace15)));
-        expect(cardFace1, isNot(equals(cardFace16)));
-        expect(cardFace1, isNot(equals(cardFace17)));
+        expect(mtgCard1, isNot(equals(mtgCard2)));
+        expect(mtgCard1, isNot(equals(mtgCard3)));
+        expect(mtgCard1, isNot(equals(mtgCard4)));
+        expect(mtgCard1, isNot(equals(mtgCard5)));
+        expect(mtgCard1, isNot(equals(mtgCard6)));
+        expect(mtgCard1, isNot(equals(mtgCard7)));
+        expect(mtgCard1, isNot(equals(mtgCard8)));
+        expect(mtgCard1, isNot(equals(mtgCard9)));
+        expect(mtgCard1, isNot(equals(mtgCard10)));
+        expect(mtgCard1, isNot(equals(mtgCard11)));
+        expect(mtgCard1, isNot(equals(mtgCard12)));
+        expect(mtgCard1, isNot(equals(mtgCard13)));
+        expect(mtgCard1, isNot(equals(mtgCard14)));
+        expect(mtgCard1, isNot(equals(mtgCard15)));
+        expect(mtgCard1, isNot(equals(mtgCard16)));
+        expect(mtgCard1, isNot(equals(mtgCard17)));
       });
     },
   );
