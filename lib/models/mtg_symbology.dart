@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:flutter_svg/flutter_svg.dart' show SvgPicture;
 
 /// A [Map] representing all of the known Magic: The Gathering symbols.
@@ -514,7 +513,7 @@ const Map<String, MTGSymbol> mtgSymbology = {
 /// Represents a single Magic: The Gathering symbol.
 ///
 /// See [toSvg] for a visual representation of this symbol.
-class MTGSymbol extends Equatable {
+class MTGSymbol {
   /// An English snippet that describes this symbol.
   /// Appropriate for use in alt text or other accessible communication formats.
   final String english;
@@ -554,8 +553,20 @@ class MTGSymbol extends Equatable {
         semanticsLabel: english,
       );
 
-  /// The properties used to determine equality between [MTGSymbol] instances
-  /// via the [Equatable] package.
+  /// Allows two instances of [MTGSymbol] to be considered equal if the relevant
+  /// properties are equal.
   @override
-  List<Object?> get props => [english, image, looseVariant, manaValue];
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        other is MTGSymbol &&
+            runtimeType == other.runtimeType &&
+            english == other.english &&
+            image == other.image &&
+            looseVariant == other.looseVariant &&
+            manaValue == other.manaValue;
+  }
+
+  /// Necessary for [==] to work properly.
+  @override
+  int get hashCode => Object.hash(english, image, looseVariant, manaValue);
 }

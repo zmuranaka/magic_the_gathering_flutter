@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart';
 import 'package:magic_the_gathering_flutter/enums/rarity.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_card_face.dart';
 
@@ -73,18 +74,57 @@ class MTGCard extends MTGCardFace {
   /// See https://draftsim.com/mtg-card-size/
   static const cornerRatio = 28;
 
-  /// Extension of [MTGCardFace.props].
+  /// Allows two instances of [MTGCard] to be considered equal if the relevant
+  /// properties are equal.
+  ///
   /// [setName] not included because [setCode] serves the same purpose.
+  /// [manaValue] not included in determining equality because [manaCost]
+  /// serves the same purpose.
   @override
-  List<Object?> get props =>
-      [
-        cardFaces,
-        keywords,
-        language,
-        rarity,
-        releasedAt,
-        reserved,
-        setCode,
-      ] +
-      super.props;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    const deepEquality = DeepCollectionEquality();
+    return other is MTGCard &&
+        runtimeType == other.runtimeType &&
+        deepEquality.equals(cardFaces, other.cardFaces) &&
+        deepEquality.equals(keywords, other.keywords) &&
+        language == other.language &&
+        rarity == other.rarity &&
+        releasedAt == other.releasedAt &&
+        reserved == other.reserved &&
+        setCode == other.setCode &&
+        artist == other.artist &&
+        flavorText == other.flavorText &&
+        deepEquality.equals(images, other.images) &&
+        manaCost == other.manaCost &&
+        name == other.name &&
+        oracleText == other.oracleText &&
+        power == other.power &&
+        toughness == other.toughness &&
+        typeLine == other.typeLine;
+  }
+
+  /// Necessary for [==] to work properly.
+  @override
+  int get hashCode {
+    const deepEquality = DeepCollectionEquality();
+    return Object.hash(
+      deepEquality.hash(cardFaces),
+      deepEquality.hash(keywords),
+      language,
+      rarity,
+      releasedAt,
+      reserved,
+      setCode,
+      artist,
+      flavorText,
+      deepEquality.hash(images),
+      manaCost,
+      name,
+      oracleText,
+      power,
+      toughness,
+      typeLine,
+    );
+  }
 }
