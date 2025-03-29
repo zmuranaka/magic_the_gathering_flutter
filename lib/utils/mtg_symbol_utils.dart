@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
 
 /// Parses a mana cost string and returns a list of widgets representing the mana symbols.
@@ -15,15 +16,15 @@ List<Widget>? parseManaCostString(String? manaCost, {
   if (manaCost == null) {
     return null;
   }
-  
-  final matches = MTGSymbol.regex.allMatches(manaCost);
+
+  Iterable<RegExpMatch> matches = MTGSymbol.regex.allMatches(manaCost);
   if (matches.isEmpty) {
     return null;
   }
-  
-  final manaCostSymbols = <Widget>[];
-  for (final match in matches) {
-    final matchedSymbol = match.group(0);
+
+  List<Widget> manaCostSymbols = <Widget>[];
+  for (RegExpMatch match in matches) {
+    String? matchedSymbol = match.group(0);
     final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
     if (mtgSymbol == null) {
       throw ArgumentError.value(
@@ -32,7 +33,7 @@ List<Widget>? parseManaCostString(String? manaCost, {
         'Unexpected MTG symbol',
       );
     }
-    final svg = mtgSymbol.toSvg();
+    SvgPicture svg = mtgSymbol.toSvg();
     manaCostSymbols.add(
       padding == null ? svg : Padding(padding: padding, child: svg),
     );
@@ -52,19 +53,19 @@ TextSpan? parseOracleTextString(String? oracleText) {
   if (oracleText == null) {
     return null;
   }
-  
-  final matches = MTGSymbol.regex.allMatches(oracleText);
+
+  Iterable<RegExpMatch>  matches = MTGSymbol.regex.allMatches(oracleText);
   if (matches.isEmpty) {
     return TextSpan(text: oracleText);
   }
   
   final List<InlineSpan> children = [];
   int lastIndex = 0;
-  for (final match in matches) {
+  for (RegExpMatch match in matches) {
     children.add(
       TextSpan(text: oracleText.substring(lastIndex, match.start)),
     );
-    final matchedSymbol = match.group(0);
+    String? matchedSymbol = match.group(0);
     final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
     if (mtgSymbol == null) {
       throw ArgumentError.value(

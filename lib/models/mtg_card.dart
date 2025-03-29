@@ -67,12 +67,12 @@ class MTGCard extends MTGCardFace {
   /// Ratio of card height / width : 3.5 inches / 2.5 inches
   ///
   /// See https://draftsim.com/mtg-card-size/
-  static const sizeRatio = 1.4;
+  static const double sizeRatio = 1.4;
 
   /// Ratio of card height / corner radius: 3.5 inches / (1/8 inch)
   ///
   /// See https://draftsim.com/mtg-card-size/
-  static const cornerRatio = 28;
+  static const  int cornerRatio = 28;
 
   /// Allows two instances of [MTGCard] to be considered equal if the relevant
   /// properties are equal.
@@ -83,7 +83,7 @@ class MTGCard extends MTGCardFace {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-    const deepEquality = DeepCollectionEquality();
+    const DeepCollectionEquality deepEquality = DeepCollectionEquality();
     return other is MTGCard &&
         runtimeType == other.runtimeType &&
         deepEquality.equals(cardFaces, other.cardFaces) &&
@@ -107,7 +107,7 @@ class MTGCard extends MTGCardFace {
   /// Necessary for [==] to work properly.
   @override
   int get hashCode {
-    const deepEquality = DeepCollectionEquality();
+    const DeepCollectionEquality deepEquality = DeepCollectionEquality();
     return Object.hash(
       deepEquality.hash(cardFaces),
       deepEquality.hash(keywords),

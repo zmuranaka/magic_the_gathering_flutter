@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
 
 /// Represents a single face of a Magic: The Gathering card.
@@ -91,13 +92,13 @@ class MTGCardFace {
     if (manaCost == null) {
       return null;
     }
-    final matches = MTGSymbol.regex.allMatches(manaCost!);
+    Iterable<RegExpMatch> matches = MTGSymbol.regex.allMatches(manaCost!);
     if (matches.isEmpty) {
       return null;
     }
-    final manaCostSymbols = <Widget>[];
-    for (final match in matches) {
-      final matchedSymbol = match.group(0);
+    List<Widget> manaCostSymbols = <Widget>[];
+    for (RegExpMatch match in matches) {
+      String? matchedSymbol = match.group(0);
       final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
       if (mtgSymbol == null) {
         throw ArgumentError.value(
@@ -106,7 +107,7 @@ class MTGCardFace {
           'Unexpected MTG symbol',
         );
       }
-      final svg = mtgSymbol.toSvg();
+      SvgPicture svg = mtgSymbol.toSvg();
       manaCostSymbols.add(
         padding == null ? svg : Padding(padding: padding, child: svg),
       );
@@ -121,17 +122,17 @@ class MTGCardFace {
     if (oracleText == null) {
       return null;
     }
-    final matches = MTGSymbol.regex.allMatches(oracleText!);
+    Iterable<RegExpMatch> matches = MTGSymbol.regex.allMatches(oracleText!);
     if (matches.isEmpty) {
       return TextSpan(text: oracleText);
     }
     final List<InlineSpan> children = [];
     int lastIndex = 0;
-    for (final match in matches) {
+    for (RegExpMatch match in matches) {
       children.add(
         TextSpan(text: oracleText!.substring(lastIndex, match.start)),
       );
-      final matchedSymbol = match.group(0);
+      String? matchedSymbol = match.group(0);
       final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
       if (mtgSymbol == null) {
         throw ArgumentError.value(
@@ -155,7 +156,7 @@ class MTGCardFace {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-    const deepEquality = DeepCollectionEquality();
+    const DeepCollectionEquality deepEquality = DeepCollectionEquality();
     return other is MTGCardFace &&
         runtimeType == other.runtimeType &&
         artist == other.artist &&
