@@ -2,7 +2,7 @@ name: example
 description: "A Flutter project to demonstrate the use of the magic_the_gathering_flutter package."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
   sdk: ^3.6.0
