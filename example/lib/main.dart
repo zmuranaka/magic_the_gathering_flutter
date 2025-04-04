@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_the_gathering_flutter/models/mtg_card.dart';
+import 'package:magic_the_gathering_flutter/magic_the_gathering_flutter.dart';
 
 void main() {
   runApp(const MyApp());

@@ -54,13 +54,6 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 
 ### MTGCard
 
-#### Methods
-
-| Method             | Description                                            | Return Type     |
-| :----------------- | :----------------------------------------------------- | :-------------- |
-| preparedManaCost   | Displays the card's mana cost using MTG symbol SVGs    | `List<Widget>?` |
-| preparedOracleText | Displays the card's oracle text using MTG symbol SVGs  | `TextSpan?`     |
-
 #### Properties
 
 | Property           | Description                                            | Return Type     |
@@ -68,6 +61,17 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 | hasMultipleFaces   | Whether the card object has more than one face         | `bool`          |
 | sizeRatio          | The ratio of an MTG card's height to its width         | `double`        |
 | cornerRatio        | The ratio of an MTG card's height to its corner radius | `int`           |
+
+### MTGCardFace
+
+[MTGCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MTGCard-class.html) extends [MTGCardFace](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace-class.html), so all its methods are accessible from [MTGCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MTGCard-class.html) instances as well.
+
+#### Methods
+
+| Method             | Description                                            | Return Type     |
+| :----------------- | :----------------------------------------------------- | :-------------- |
+| preparedManaCost   | Displays the card's mana cost using MTG symbol SVGs    | `List<Widget>?` |
+| preparedOracleText | Displays the card's oracle text using MTG symbol SVGs  | `TextSpan?`     |
 
 ### MTGSymbol
 
@@ -82,6 +86,13 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 | Property           | Description                                            | Return Type     |
 | :----------------- | :----------------------------------------------------- | :-------------- |
 | regex              | Matches text that can be converted to an MTGSymbol     | `RegExp`        |
+
+### mtgSymbology
+
+A [Map](https://api.dart.dev/dart-core/Map-class.html) of [String](https://api.dart.dev/dart-core/String-class.html) keys and [MTGSymbol](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_symbology/MTGSymbol-class.html) instance values.
+The keys are based on the notation used in Magic: The Gathering's [Comprehensive Rules](https://magic.wizards.com/en/rules).
+
+The [MTGCardFace.preparedManaCost](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace/preparedManaCost.html) method and the [MTGCardFace.preparedOracleText](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace/preparedOracleText.html) method use this under the hood.
 
 ## Example
 

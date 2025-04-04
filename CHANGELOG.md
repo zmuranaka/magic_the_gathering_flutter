@@ -1,3 +1,9 @@
+## 1.0.5
+
+* Add exports to `magic_the_gathering_flutter.dart` for simpler importing.
+* Update the `README.md` with documentation for `mtgSymbology` and `MTGCardFace`
+* Update the example project to import the library file directly and bump the example's version to 1.0.1
+
 ## 1.0.4
 
 * Remove [equatable](https://pub.dev/packages/equatable) as a dependency. The `==` and `hashCode` for the relevant classes are now manually overridden, using [collection](https://pub.dev/packages/collection) when necessary.
