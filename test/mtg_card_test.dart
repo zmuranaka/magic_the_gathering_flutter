@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   group(
-    'MTGCard equality tests',
+    'MtgCard equality tests',
     () {
       final Map<String, dynamic> mtgCardJson = {
         'keywords': [],
@@ -35,73 +35,73 @@ void main() {
         'type_line': 'Sorcery',
         'cmc': 6.0,
       };
-      test('MTGCard is equal to itself', () {
-        final mtgCard = MTGCard.fromMap(mtgCardJson);
+      test('MtgCard is equal to itself', () {
+        final mtgCard = MtgCard.fromMap(mtgCardJson);
         expect(mtgCard, equals(mtgCard));
       });
-      test('MTGCard with same properties are equal', () {
-        final mtgCard1 = MTGCard.fromMap(mtgCardJson);
-        final mtgCard2 = MTGCard.fromMap(mtgCardJson);
+      test('MtgCard with same properties are equal', () {
+        final mtgCard1 = MtgCard.fromMap(mtgCardJson);
+        final mtgCard2 = MtgCard.fromMap(mtgCardJson);
         expect(mtgCard1, equals(mtgCard2));
       });
       test(
-        'MTGCard equality ignores non-equality of irrelevant parameters',
+        'MtgCard equality ignores non-equality of irrelevant parameters',
         () {
-          final mtgCard1 = MTGCard.fromMap(mtgCardJson);
-          final mtgCard2 = MTGCard.fromMap(
+          final mtgCard1 = MtgCard.fromMap(mtgCardJson);
+          final mtgCard2 = MtgCard.fromMap(
             mtgCardJson..['some_other_key'] = 'new text',
           );
           expect(mtgCard1, equals(mtgCard2));
         },
       );
-      test('MTGCard with different properties are not equal', () {
-        final mtgCard1 = MTGCard.fromMap(mtgCardJson);
-        final mtgCard2 = MTGCard.fromMap(
+      test('MtgCard with different properties are not equal', () {
+        final mtgCard1 = MtgCard.fromMap(mtgCardJson);
+        final mtgCard2 = MtgCard.fromMap(
           mtgCardJson..['keywords'] = ['different text'],
         );
-        final mtgCard3 = MTGCard.fromMap(
+        final mtgCard3 = MtgCard.fromMap(
           mtgCardJson..['lang'] = 'different text',
         );
-        final mtgCard4 = MTGCard.fromMap(
+        final mtgCard4 = MtgCard.fromMap(
           mtgCardJson..['rarity'] = 'common',
         );
-        final mtgCard5 = MTGCard.fromMap(
+        final mtgCard5 = MtgCard.fromMap(
           mtgCardJson..['released_at'] = '1900-01-01',
         );
-        final mtgCard6 = MTGCard.fromMap(
+        final mtgCard6 = MtgCard.fromMap(
           mtgCardJson..['reserved'] = true,
         );
-        final mtgCard7 = MTGCard.fromMap(
+        final mtgCard7 = MtgCard.fromMap(
           mtgCardJson..['set'] = 'different text',
         );
-        final mtgCard8 = MTGCard.fromMap(
+        final mtgCard8 = MtgCard.fromMap(
           mtgCardJson..['set_name'] = 'different text',
         );
-        final mtgCard9 = MTGCard.fromMap(
+        final mtgCard9 = MtgCard.fromMap(
           mtgCardJson..['artist'] = 'different text',
         );
-        final mtgCard10 = MTGCard.fromMap(
+        final mtgCard10 = MtgCard.fromMap(
           mtgCardJson..['image_uris'] = null,
         );
-        final mtgCard11 = MTGCard.fromMap(
+        final mtgCard11 = MtgCard.fromMap(
           mtgCardJson..['mana_cost'] = 'different text',
         );
-        final mtgCard12 = MTGCard.fromMap(
+        final mtgCard12 = MtgCard.fromMap(
           mtgCardJson..['name'] = 'different text',
         );
-        final mtgCard13 = MTGCard.fromMap(
+        final mtgCard13 = MtgCard.fromMap(
           mtgCardJson..['oracle_text'] = 'different text',
         );
-        final mtgCard14 = MTGCard.fromMap(
+        final mtgCard14 = MtgCard.fromMap(
           mtgCardJson..['power'] = 'different text',
         );
-        final mtgCard15 = MTGCard.fromMap(
+        final mtgCard15 = MtgCard.fromMap(
           mtgCardJson..['toughness'] = 'different text',
         );
-        final mtgCard16 = MTGCard.fromMap(
+        final mtgCard16 = MtgCard.fromMap(
           mtgCardJson..['type_line'] = 'different text',
         );
-        final mtgCard17 = MTGCard.fromMap(
+        final mtgCard17 = MtgCard.fromMap(
           mtgCardJson..['cmc'] = 1.0,
         );
         expect(mtgCard1, isNot(equals(mtgCard2)));

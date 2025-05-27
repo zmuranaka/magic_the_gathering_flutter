@@ -1,3 +1,14 @@
+## 2.0.0
+
+* This package now depends on [mtg_symbology](https://pub.dev/packages/mtg_symbology)
+    * **Breaking** - The SVG asset paths are `'packages/mtg_symbology/assets/ASSET_NAME.svg'` now instead of `'packages/magic_the_gathering_flutter/assets/ASSET_NAME.svg'`
+    * This package re-exports [mtg_symbology](https://pub.dev/packages/mtg_symbology), so there should not be other breaking changes
+* Renaming classes
+    * **Breaking** - `MTGCard` renamed to `MtgCard`
+    * **Breaking** - `MTGCardFace` renamed to `MtgCardFace`
+* Bumps minimum [flutter_svg](https://pub.dev/packages/flutter_svg) version to `2.1.0`
+* **Breaking** - Makes minimum Flutter version 3.27.0 - in line with [flutter_svg](https://github.com/flutter/packages/blob/c19f8399160d70cbcd874ec503aedc48aa9ce828/third_party/packages/flutter_svg/pubspec.yaml#L9)
+
 ## 1.0.5
 
 * Add exports to `magic_the_gathering_flutter.dart` for simpler importing.
