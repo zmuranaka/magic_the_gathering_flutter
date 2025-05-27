@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _cards = <MTGCard>[];
+  final _cards = <MtgCard>[];
 
   @override
   void initState() {
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       throw ArgumentError.value(json, 'json', 'Expected type List');
     }
     for (final card in json) {
-      _cards.add(MTGCard.fromMap(card));
+      _cards.add(MtgCard.fromMap(card));
     }
     setState(() {});
   }
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
               : ListView.separated(
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
                   itemCount: _cards.length,
-                  itemBuilder: (context, index) => MTGCardTile(
+                  itemBuilder: (context, index) => MtgCardTile(
                     card: _cards[index],
                   ),
                   separatorBuilder: (context, index) => Divider(thickness: 2.0),
@@ -77,10 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class MTGCardTile extends StatelessWidget {
-  const MTGCardTile({super.key, required this.card});
+class MtgCardTile extends StatelessWidget {
+  const MtgCardTile({super.key, required this.card});
 
-  final MTGCard card;
+  final MtgCard card;
 
   @override
   Widget build(BuildContext context) {

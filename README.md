@@ -1,8 +1,8 @@
-Make developing Magic: The Gathering (MTG) apps a breeze!
+Develop Magic: The Gathering (MTG) Flutter apps with ease!
 
 ## Examples
 
-Develop custom MTG Flutter widgets easily with full support for MTG mana and other symbols:
+Develop custom MTG Flutter widgets easily with full support for MTG mana and all other symbols:
 
 ![Image showing four example cards](https://raw.githubusercontent.com/zmuranaka/magic_the_gathering_flutter/refs/heads/main/screenshots/screenshot_1.jpg)
 
@@ -14,19 +14,19 @@ Full support for "Un" sets as well:
 
 * Model representing an MTG card
 * Double-faced card support
-* Convert JSON to model instances using supported `fromMap` constructor
-* SVGs for all MTG symbols and helpful methods to display them
-* Minimal external dependencies - only [flutter_svg](https://pub.dev/packages/flutter_svg) and [collection](https://pub.dev/packages/collection) are used
-* Works on Android, iOS, Linux, MacOS, Web, Windows
+* Convert JSON to model instances using `fromMap` constructor
+* SVGs for all MTG symbols provided by the [mtg_symbology](https://pub.dev/packages/mtg_symbology) package.
+* Minimal external dependencies - only [flutter_svg](https://pub.dev/packages/flutter_svg), [collection](https://pub.dev/packages/collection), and [mtg_symbology](https://pub.dev/packages/mtg_symbology) are used
+* Works on Android, iOS, Linux, MacOS, Web, and Windows
 
 ## Getting started
 
 You will need to provide data for the MTG cards yourself. Consider downloading or requesting some using the [Scryfall API](https://scryfall.com/docs/api) (which this package is fully interoperable with)!
 
-Then instantiate an MTGCard using the model's `fromMap` constructor.
+Then instantiate an MtgCard using the model's `fromMap` constructor.
 
 ```dart
-final blackLotus = MTGCard.fromMap({
+final blackLotus = MtgCard.fromMap({
     "keywords": [],
     "lang": "en",
     "rarity": "bonus",
@@ -48,11 +48,11 @@ final blackLotus = MTGCard.fromMap({
 });
 ```
 
-A default constructor is not currently supported for the `MTGCard` model. The recommended use case is to store or request the MTG card data as JSON and parse it into Dart `Map` objects.
+A default constructor is not currently supported for the `MtgCard` model. The recommended use case is to store or request the MTG card data as JSON and parse it into Dart `Map` objects.
 
 ## API
 
-### MTGCard
+### MtgCard
 
 #### Properties
 
@@ -62,9 +62,9 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 | sizeRatio          | The ratio of an MTG card's height to its width         | `double`        |
 | cornerRatio        | The ratio of an MTG card's height to its corner radius | `int`           |
 
-### MTGCardFace
+### MtgCardFace
 
-[MTGCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MTGCard-class.html) extends [MTGCardFace](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace-class.html), so all its methods are accessible from [MTGCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MTGCard-class.html) instances as well.
+[MtgCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MtgCard-class.html) extends [MtgCardFace](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MtgCardFace-class.html), so all its methods are accessible from [MtgCard](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card/MtgCard-class.html) instances as well.
 
 #### Methods
 
@@ -73,42 +73,21 @@ A default constructor is not currently supported for the `MTGCard` model. The re
 | preparedManaCost   | Displays the card's mana cost using MTG symbol SVGs    | `List<Widget>?` |
 | preparedOracleText | Displays the card's oracle text using MTG symbol SVGs  | `TextSpan?`     |
 
-### MTGSymbol
-
-#### Methods
-
-| Method             | Description                                            | Return Type     |
-| :----------------- | :----------------------------------------------------- | :-------------- |
-| toSvg              | Converts the MTGSymbol object into an SVG widget       | `SVGPicture`    |
-
-#### Properties
-
-| Property           | Description                                            | Return Type     |
-| :----------------- | :----------------------------------------------------- | :-------------- |
-| regex              | Matches text that can be converted to an MTGSymbol     | `RegExp`        |
-
-### mtgSymbology
-
-A [Map](https://api.dart.dev/dart-core/Map-class.html) of [String](https://api.dart.dev/dart-core/String-class.html) keys and [MTGSymbol](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_symbology/MTGSymbol-class.html) instance values.
-The keys are based on the notation used in Magic: The Gathering's [Comprehensive Rules](https://magic.wizards.com/en/rules).
-
-The [MTGCardFace.preparedManaCost](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace/preparedManaCost.html) method and the [MTGCardFace.preparedOracleText](https://pub.dev/documentation/magic_the_gathering_flutter/latest/models_mtg_card_face/MTGCardFace/preparedOracleText.html) method use this under the hood.
-
 ## Example
 
-Below shows an example of how to display a simple widget. The example assumed you already have an `MTGCard` instance named `blackLotus`.
+Below shows an example of how to display a simple widget. The example assumed you already have an `MtgCard` instance named `blackLotus`.
 
 ```dart
 final cardImage = blackLotus.images?['art_crop'];
 final child = Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
+  crossAxisAlignment: CrossAxisAlignment.start,
+  children: [
     Row(
-        children: [
+      children: [
         Text(blackLotus.name),
         const Spacer(),
         ...?blackLotus.preparedManaCost(),
-        ],
+      ],
     ),
     const SizedBox(height: 8.0),
     if (cardImage != null) Image.network(cardImage),
@@ -116,16 +95,16 @@ final child = Column(
     Text(blackLotus.typeLine),
     Text.rich(blackLotus.preparedOracleText() ??
         TextSpan(text: blackLotus.oracleText)),
-    ],
+  ],
 );
 return Scaffold(
-    appBar: AppBar(
+  appBar: AppBar(
     backgroundColor: Theme.of(context).colorScheme.inversePrimary,
     title: Text('Magic: the Gathering Flutter App'),
-    ),
-    body: SafeArea(
+  ),
+  body: SafeArea(
     child: Center(child: child),
-    ),
+  ),
 );
 ```
 
@@ -133,7 +112,9 @@ For a more detailed example, look in the [example](https://github.com/zmuranaka/
 
 ## Contributing
 
-Contributions are welcome! Be sure to follow the linter rules defined in the [analysis_options](https://github.com/zmuranaka/magic_the_gathering_flutter/blob/main/analysis_options.yaml) file.
+Contributions are welcome!
+
+In order for a contribution to be considered, it must follow the linter rules in the [analysis_options](https://github.com/zmuranaka/scryfall_api_symbols/blob/master/analysis_options.yaml) file. Also, if new functionality is being added, tests should be added for that new functionality.
 
 ## Legal
 

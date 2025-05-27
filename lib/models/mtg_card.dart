@@ -4,12 +4,12 @@ import 'package:magic_the_gathering_flutter/models/mtg_card_face.dart';
 
 /// Represents a full Magic: The Gathering card.
 /// If the card has multiple faces, each of its faces is represented by an
-/// [MTGCardFace] instance in [cardFaces].
-class MTGCard extends MTGCardFace {
-  /// All of the card's faces as a [List] of [MTGCardFace] instances.
+/// [MtgCardFace] instance in [cardFaces].
+class MtgCard extends MtgCardFace {
+  /// All of the card's faces as a [List] of [MtgCardFace] instances.
   /// This will be `null` if the card does not have any faces
   /// (it will never be an empty [List]).
-  final List<MTGCardFace>? cardFaces;
+  final List<MtgCardFace>? cardFaces;
 
   /// A [List] of keywords that this card uses, such as `'Flying'` and
   /// `'Cumulative upkeep'`.
@@ -33,10 +33,10 @@ class MTGCard extends MTGCardFace {
   /// This card's full set name, such as `'Bloomburrow'`.
   final String setName;
 
-  /// Convert a map to an [MTGCard] instance.
+  /// Convert a map to an [MtgCard] instance.
   /// The intended use case is to store or request JSON data and convert that
   /// to a Dart [Map], then pass that to this constructor.
-  MTGCard.fromMap(super.m)
+  MtgCard.fromMap(super.m)
       : cardFaces = _cardFaces(m['card_faces']),
         keywords = ((m['keywords'] ?? []) as List).cast<String>(),
         language = m['lang'],
@@ -48,7 +48,7 @@ class MTGCard extends MTGCardFace {
         super.fromMap();
 
   /// Method used to parse [cardFaces]. Not intended for external use.
-  static List<MTGCardFace>? _cardFaces(dynamic value) {
+  static List<MtgCardFace>? _cardFaces(dynamic value) {
     if (value == null) {
       return null;
     }
@@ -58,7 +58,7 @@ class MTGCard extends MTGCardFace {
     if (value.isEmpty) {
       return null;
     }
-    return [for (final cardFace in value) MTGCardFace.fromMap(cardFace)];
+    return [for (final cardFace in value) MtgCardFace.fromMap(cardFace)];
   }
 
   /// Returns true if the card has multiple faces
@@ -74,7 +74,7 @@ class MTGCard extends MTGCardFace {
   /// See https://draftsim.com/mtg-card-size/
   static const cornerRatio = 28;
 
-  /// Allows two instances of [MTGCard] to be considered equal if the relevant
+  /// Allows two instances of [MtgCard] to be considered equal if the relevant
   /// properties are equal.
   ///
   /// [setName] not included because [setCode] serves the same purpose.
@@ -84,7 +84,7 @@ class MTGCard extends MTGCardFace {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
     const deepEquality = DeepCollectionEquality();
-    return other is MTGCard &&
+    return other is MtgCard &&
         runtimeType == other.runtimeType &&
         deepEquality.equals(cardFaces, other.cardFaces) &&
         deepEquality.equals(keywords, other.keywords) &&

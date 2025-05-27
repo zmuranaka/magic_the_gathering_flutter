@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   group(
-    'MTGCardFace equality tests',
+    'MtgCardFace equality tests',
     () {
       final Map<String, dynamic> cardFaceJson = {
         'artist': 'Nils Hamm',
@@ -29,49 +29,49 @@ void main() {
         'toughness': '1',
         'type_line': 'Creature — Human Wizard',
       };
-      test('MTGCardFace is equal to itself', () {
-        final cardFace = MTGCardFace.fromMap(cardFaceJson);
+      test('MtgCardFace is equal to itself', () {
+        final cardFace = MtgCardFace.fromMap(cardFaceJson);
         expect(cardFace, equals(cardFace));
       });
-      test('MTGCardFace with same properties are equal', () {
-        final cardFace1 = MTGCardFace.fromMap(cardFaceJson);
-        final cardFace2 = MTGCardFace.fromMap(cardFaceJson);
+      test('MtgCardFace with same properties are equal', () {
+        final cardFace1 = MtgCardFace.fromMap(cardFaceJson);
+        final cardFace2 = MtgCardFace.fromMap(cardFaceJson);
         expect(cardFace1, equals(cardFace2));
       });
       test(
-        'MTGCardFace equality ignores non-equality of irrelevant parameters',
+        'MtgCardFace equality ignores non-equality of irrelevant parameters',
         () {
-          final cardFace1 = MTGCardFace.fromMap(cardFaceJson);
-          final cardFace2 = MTGCardFace.fromMap(
+          final cardFace1 = MtgCardFace.fromMap(cardFaceJson);
+          final cardFace2 = MtgCardFace.fromMap(
             cardFaceJson..['some_other_key'] = 'new text',
           );
           expect(cardFace1, equals(cardFace2));
         },
       );
-      test('MTGCardFace with different properties are not equal', () {
-        final cardFace1 = MTGCardFace.fromMap(cardFaceJson);
-        final cardFace2 = MTGCardFace.fromMap(
+      test('MtgCardFace with different properties are not equal', () {
+        final cardFace1 = MtgCardFace.fromMap(cardFaceJson);
+        final cardFace2 = MtgCardFace.fromMap(
           cardFaceJson..['artist'] = 'different text',
         );
-        final cardFace3 = MTGCardFace.fromMap(
+        final cardFace3 = MtgCardFace.fromMap(
           cardFaceJson..['image_uris'] = null,
         );
-        final cardFace4 = MTGCardFace.fromMap(
+        final cardFace4 = MtgCardFace.fromMap(
           cardFaceJson..['mana_cost'] = 'different text',
         );
-        final cardFace5 = MTGCardFace.fromMap(
+        final cardFace5 = MtgCardFace.fromMap(
           cardFaceJson..['name'] = 'different text',
         );
-        final cardFace6 = MTGCardFace.fromMap(
+        final cardFace6 = MtgCardFace.fromMap(
           cardFaceJson..['oracle_text'] = 'different text',
         );
-        final cardFace7 = MTGCardFace.fromMap(
+        final cardFace7 = MtgCardFace.fromMap(
           cardFaceJson..['power'] = 'different text',
         );
-        final cardFace8 = MTGCardFace.fromMap(
+        final cardFace8 = MtgCardFace.fromMap(
           cardFaceJson..['toughness'] = 'different text',
         );
-        final cardFace9 = MTGCardFace.fromMap(
+        final cardFace9 = MtgCardFace.fromMap(
           cardFaceJson..['type_line'] = 'different text',
         );
         expect(cardFace1, isNot(equals(cardFace2)));

@@ -1,11 +1,11 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_the_gathering_flutter/models/mtg_symbology.dart';
+import 'package:mtg_symbology/mtg_symbology.dart';
 
 /// Represents a single face of a Magic: The Gathering card.
 /// Most cards have a single face, but some have multiple faces such as
 /// [Delver of Secrets](https://scryfall.com/card/isd/51/delver-of-secrets-insectile-aberration).
-class MTGCardFace {
+class MtgCardFace {
   /// The name of the illustrator of this card face, such as `'Raymond Swanland'`.
   final String? artist;
 
@@ -49,10 +49,10 @@ class MTGCardFace {
   /// The type line of this particular face, such as `'Legendary Artifact'`.
   final String typeLine;
 
-  /// Convert a map to an [MTGCardFace] instance.
+  /// Convert a map to an [MtgCardFace] instance.
   /// The intended use case is to store or request JSON data and convert that
   /// to a Dart [Map], then pass that to this constructor.
-  MTGCardFace.fromMap(Map m)
+  MtgCardFace.fromMap(Map m)
       : artist = m['artist'],
         flavorText = m['flavor_text'],
         images = _images(m['image_uris']),
@@ -91,14 +91,14 @@ class MTGCardFace {
     if (manaCost == null) {
       return null;
     }
-    final matches = MTGSymbol.regex.allMatches(manaCost!);
+    final matches = MtgSymbol.regex.allMatches(manaCost!);
     if (matches.isEmpty) {
       return null;
     }
     final manaCostSymbols = <Widget>[];
     for (final match in matches) {
       final matchedSymbol = match.group(0);
-      final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
+      final mtgSymbol = mtgSymbology[matchedSymbol];
       if (mtgSymbol == null) {
         throw ArgumentError.value(
           matchedSymbol,
@@ -121,18 +121,18 @@ class MTGCardFace {
     if (oracleText == null) {
       return null;
     }
-    final matches = MTGSymbol.regex.allMatches(oracleText!);
+    final matches = MtgSymbol.regex.allMatches(oracleText!);
     if (matches.isEmpty) {
       return TextSpan(text: oracleText);
     }
-    final List<InlineSpan> children = [];
+    final children = <InlineSpan>[];
     int lastIndex = 0;
     for (final match in matches) {
       children.add(
         TextSpan(text: oracleText!.substring(lastIndex, match.start)),
       );
       final matchedSymbol = match.group(0);
-      final MTGSymbol? mtgSymbol = mtgSymbology[matchedSymbol];
+      final mtgSymbol = mtgSymbology[matchedSymbol];
       if (mtgSymbol == null) {
         throw ArgumentError.value(
           matchedSymbol,
@@ -147,7 +147,7 @@ class MTGCardFace {
     return TextSpan(children: children);
   }
 
-  /// Allows two instances of [MTGCardFace] to be considered equal if the
+  /// Allows two instances of [MtgCardFace] to be considered equal if the
   /// relevant properties are equal.
   ///
   /// [manaValue] not included in determining equality because [manaCost]
@@ -156,7 +156,7 @@ class MTGCardFace {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
     const deepEquality = DeepCollectionEquality();
-    return other is MTGCardFace &&
+    return other is MtgCardFace &&
         runtimeType == other.runtimeType &&
         artist == other.artist &&
         flavorText == other.flavorText &&
