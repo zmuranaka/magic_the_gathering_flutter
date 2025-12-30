@@ -5,8 +5,25 @@ import 'package:mtg_symbology/mtg_symbology.dart';
 /// Represents a single face of a Magic: The Gathering card.
 /// Most cards have a single face, but some have multiple faces such as
 /// [Delver of Secrets](https://scryfall.com/card/isd/51/delver-of-secrets-insectile-aberration).
+@immutable
 class MtgCardFace {
-  /// The name of the illustrator of this card face, such as `'Raymond Swanland'`.
+  /// Convert a map to an [MtgCardFace] instance.
+  /// The intended use case is to store or request JSON data and convert that
+  /// to a Dart [Map], then pass that to this constructor.
+  MtgCardFace.fromMap(Map<String, dynamic> m)
+    : artist = m['artist'] as String?,
+      flavorText = m['flavor_text'] as String?,
+      images = _images(m['image_uris']),
+      manaCost = m['mana_cost'] as String?,
+      manaValue = m['cmc'] as double?,
+      name = m['name'] as String,
+      oracleText = m['oracle_text'] as String?,
+      power = m['power'] as String?,
+      toughness = m['toughness'] as String?,
+      typeLine = m['type_line'] as String;
+
+  /// The name of the illustrator of this card face, such as
+  /// `'Raymond Swanland'`.
   final String? artist;
 
   /// The flavor text printed on this face, if any.
@@ -48,21 +65,6 @@ class MtgCardFace {
 
   /// The type line of this particular face, such as `'Legendary Artifact'`.
   final String typeLine;
-
-  /// Convert a map to an [MtgCardFace] instance.
-  /// The intended use case is to store or request JSON data and convert that
-  /// to a Dart [Map], then pass that to this constructor.
-  MtgCardFace.fromMap(Map m)
-      : artist = m['artist'],
-        flavorText = m['flavor_text'],
-        images = _images(m['image_uris']),
-        manaCost = m['mana_cost'],
-        manaValue = m['cmc'],
-        name = m['name'],
-        oracleText = m['oracle_text'],
-        power = m['power'],
-        toughness = m['toughness'],
-        typeLine = m['type_line'];
 
   /// Method used to parse [images]. Not intended for external use.
   static Map<String, String>? _images(dynamic value) {
@@ -126,7 +128,7 @@ class MtgCardFace {
       return TextSpan(text: oracleText);
     }
     final children = <InlineSpan>[];
-    int lastIndex = 0;
+    var lastIndex = 0;
     for (final match in matches) {
       children.add(
         TextSpan(text: oracleText!.substring(lastIndex, match.start)),
@@ -172,14 +174,14 @@ class MtgCardFace {
   /// Necessary for [==] to work properly.
   @override
   int get hashCode => Object.hash(
-        artist,
-        flavorText,
-        const DeepCollectionEquality().hash(images),
-        manaCost,
-        name,
-        oracleText,
-        power,
-        toughness,
-        typeLine,
-      );
+    artist,
+    flavorText,
+    const DeepCollectionEquality().hash(images),
+    manaCost,
+    name,
+    oracleText,
+    power,
+    toughness,
+    typeLine,
+  );
 }

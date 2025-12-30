@@ -1,11 +1,27 @@
 import 'package:collection/collection.dart';
+import 'package:flutter/foundation.dart' show immutable;
 import 'package:magic_the_gathering_flutter/enums/rarity.dart';
 import 'package:magic_the_gathering_flutter/models/mtg_card_face.dart';
 
 /// Represents a full Magic: The Gathering card.
 /// If the card has multiple faces, each of its faces is represented by an
 /// [MtgCardFace] instance in [cardFaces].
+@immutable
 class MtgCard extends MtgCardFace {
+  /// Convert a map to an [MtgCard] instance.
+  /// The intended use case is to store or request JSON data and convert that
+  /// to a Dart [Map], then pass that to this constructor.
+  MtgCard.fromMap(super.m)
+    : cardFaces = _cardFaces(m['card_faces']),
+      keywords = ((m['keywords'] ?? <String>[]) as List).cast<String>(),
+      language = m['lang'] as String,
+      rarity = Rarity.fromString(m['rarity'] as String),
+      releasedAt = DateTime.parse(m['released_at'] as String),
+      reserved = m['reserved'] as bool,
+      setCode = m['set'] as String,
+      setName = m['set_name'] as String,
+      super.fromMap();
+
   /// All of the card's faces as a [List] of [MtgCardFace] instances.
   /// This will be `null` if the card does not have any faces
   /// (it will never be an empty [List]).
@@ -33,20 +49,6 @@ class MtgCard extends MtgCardFace {
   /// This card's full set name, such as `'Bloomburrow'`.
   final String setName;
 
-  /// Convert a map to an [MtgCard] instance.
-  /// The intended use case is to store or request JSON data and convert that
-  /// to a Dart [Map], then pass that to this constructor.
-  MtgCard.fromMap(super.m)
-      : cardFaces = _cardFaces(m['card_faces']),
-        keywords = ((m['keywords'] ?? []) as List).cast<String>(),
-        language = m['lang'],
-        rarity = Rarity.fromString(m['rarity']),
-        releasedAt = DateTime.parse(m['released_at']),
-        reserved = m['reserved'],
-        setCode = m['set'],
-        setName = m['set_name'],
-        super.fromMap();
-
   /// Method used to parse [cardFaces]. Not intended for external use.
   static List<MtgCardFace>? _cardFaces(dynamic value) {
     if (value == null) {
@@ -58,11 +60,14 @@ class MtgCard extends MtgCardFace {
     if (value.isEmpty) {
       return null;
     }
-    return [for (final cardFace in value) MtgCardFace.fromMap(cardFace)];
+    return [
+      for (final cardFace in value)
+        MtgCardFace.fromMap(cardFace as Map<String, dynamic>),
+    ];
   }
 
   /// Returns true if the card has multiple faces
-  bool get hasMultipleFaces => cardFaces?.isNotEmpty == true;
+  bool get hasMultipleFaces => cardFaces?.isNotEmpty ?? false;
 
   /// Ratio of card height / width : 3.5 inches / 2.5 inches
   ///

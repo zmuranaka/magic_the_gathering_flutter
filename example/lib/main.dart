@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:magic_the_gathering_flutter/magic_the_gathering_flutter.dart';
 
 void main() {
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       throw ArgumentError.value(json, 'json', 'Expected type List');
     }
     for (final card in json) {
-      _cards.add(MtgCard.fromMap(card));
+      _cards.add(MtgCard.fromMap(card as Map<String, dynamic>));
     }
     setState(() {});
   }
@@ -57,19 +57,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Magic: the Gathering Flutter App'),
+        title: const Text('Magic: the Gathering Flutter App'),
       ),
       body: SafeArea(
         child: Center(
           child: _cards.isEmpty
               ? const CircularProgressIndicator()
               : ListView.separated(
-                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   itemCount: _cards.length,
-                  itemBuilder: (context, index) => MtgCardTile(
-                    card: _cards[index],
-                  ),
-                  separatorBuilder: (context, index) => Divider(thickness: 2.0),
+                  itemBuilder: (context, index) {
+                    return MtgCardTile(card: _cards[index]);
+                  },
+                  separatorBuilder: (context, index) {
+                    return const Divider(thickness: 2);
+                  },
                 ),
         ),
       ),
@@ -78,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class MtgCardTile extends StatelessWidget {
-  const MtgCardTile({super.key, required this.card});
+  const MtgCardTile({required this.card, super.key});
 
   final MtgCard card;
 
@@ -95,9 +97,9 @@ class MtgCardTile extends StatelessWidget {
             ...?card.preparedManaCost(),
           ],
         ),
-        const SizedBox(height: 8.0),
+        const SizedBox(height: 8),
         if (cardImage != null) Image.network(cardImage),
-        const SizedBox(height: 8.0),
+        const SizedBox(height: 8),
         Text(card.typeLine),
         Text.rich(card.preparedOracleText() ?? TextSpan(text: card.oracleText)),
       ],

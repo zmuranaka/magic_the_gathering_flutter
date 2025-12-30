@@ -5,7 +5,7 @@ void main() {
   group(
     'MtgCardFace equality tests',
     () {
-      final Map<String, dynamic> cardFaceJson = {
+      final cardFaceJson = <String, dynamic>{
         'artist': 'Nils Hamm',
         'image_uris': {
           'small':
@@ -19,12 +19,14 @@ void main() {
           'art_crop':
               'https://cards.scryfall.io/art_crop/front/6/9/6904ea20-e504-47da-95a0-08739fdde260.jpg?1736467707',
           'border_crop':
-              'https://cards.scryfall.io/border_crop/front/6/9/6904ea20-e504-47da-95a0-08739fdde260.jpg?1736467707'
+              'https://cards.scryfall.io/border_crop/front/6/9/6904ea20-e504-47da-95a0-08739fdde260.jpg?1736467707',
         },
         'mana_cost': '{U}',
         'name': 'Delver of Secrets',
         'oracle_text':
-            'At the beginning of your upkeep, look at the top card of your library. You may reveal that card. If an instant or sorcery card is revealed this way, transform this creature.',
+            'At the beginning of your upkeep, look at the top card of your '
+            'library. You may reveal that card. If an instant or sorcery card '
+            'is revealed this way, transform this creature.',
         'power': '1',
         'toughness': '1',
         'type_line': 'Creature — Human Wizard',
