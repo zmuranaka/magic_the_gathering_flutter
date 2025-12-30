@@ -5,8 +5,8 @@ void main() {
   group(
     'MtgCard equality tests',
     () {
-      final Map<String, dynamic> mtgCardJson = {
-        'keywords': [],
+      final mtgCardJson = <String, dynamic>{
+        'keywords': <String>[],
         'lang': 'en',
         'rarity': 'mythic',
         'released_at': '2024-08-02',
@@ -26,24 +26,32 @@ void main() {
           'art_crop':
               'https://cards.scryfall.io/art_crop/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924',
           'border_crop':
-              'https://cards.scryfall.io/border_crop/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924'
+              'https://cards.scryfall.io/border_crop/front/7/1/71dd3c27-e0d5-434e-a0f3-4a95245e21c2.jpg?1721426924',
         },
         'mana_cost': '{4}{G}{G}',
         'name': 'Season of Gathering',
         'oracle_text':
-            'Choose up to five {P} worth of modes. You may choose the same mode more than once.\n{P} — Put a +1/+1 counter on a creature you control. It gains vigilance and trample until end of turn.\n{P}{P} — Choose artifact or enchantment. Destroy all permanents of the chosen type.\n{P}{P}{P} — Draw cards equal to the greatest power among creatures you control.',
+            'Choose up to five {P} worth of modes. You may choose the same '
+            'mode more than once.\n{P} — Put a +1/+1 counter on a creature '
+            'you control. It gains vigilance and trample until end of '
+            'turn.\n{P}{P} — Choose artifact or enchantment. Destroy all '
+            'permanents of the chosen type.\n{P}{P}{P} — Draw cards equal '
+            'to the greatest power among creatures you control.',
         'type_line': 'Sorcery',
         'cmc': 6.0,
       };
+
       test('MtgCard is equal to itself', () {
         final mtgCard = MtgCard.fromMap(mtgCardJson);
         expect(mtgCard, equals(mtgCard));
       });
+
       test('MtgCard with same properties are equal', () {
         final mtgCard1 = MtgCard.fromMap(mtgCardJson);
         final mtgCard2 = MtgCard.fromMap(mtgCardJson);
         expect(mtgCard1, equals(mtgCard2));
       });
+
       test(
         'MtgCard equality ignores non-equality of irrelevant parameters',
         () {
@@ -54,6 +62,7 @@ void main() {
           expect(mtgCard1, equals(mtgCard2));
         },
       );
+
       test('MtgCard with different properties are not equal', () {
         final mtgCard1 = MtgCard.fromMap(mtgCardJson);
         final mtgCard2 = MtgCard.fromMap(
