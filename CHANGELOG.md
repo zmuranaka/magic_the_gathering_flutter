@@ -1,4 +1,4 @@
-## 2.0.1
+## 2.0.1 - December 30, 2025
 
 * Make minimum supported [flutter_svg](https://pub.dev/packages/flutter_svg) version 2.2.3
 * Make minimum supported SDK version Flutter 3.32/Dart 3.8 - in line with [flutter_svg](https://github.com/flutter/packages/blob/30dd810481e42642b8910503f4f45a4f81b5f31d/third_party/packages/flutter_svg/pubspec.yaml#L8-L9)
