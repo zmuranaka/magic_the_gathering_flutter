@@ -2,7 +2,7 @@ name: magic_the_gathering_flutter
 description: "Develop Magic: The Gathering Flutter apps with ease. Fully interoperable with the Scryfall API or your own custom JSON."
 repository: https://github.com/zmuranaka/magic_the_gathering_flutter
 issue_tracker: https://github.com/zmuranaka/magic_the_gathering_flutter/issues
-version: 2.0.2
+version: 2.0.3
 
 environment:
   sdk: ^3.8.0
@@ -13,8 +13,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.2.3
-  mtg_symbology: ^1.0.2
+  mtg_symbology: ^1.0.4
 
 dev_dependencies:
-  test: ^1.28.0
+  test: ^1.29.0
   very_good_analysis: ^10.0.0
