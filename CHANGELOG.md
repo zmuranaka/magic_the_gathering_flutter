@@ -1,3 +1,9 @@
+## 2.0.5 - July 3, 2026
+
+* Upgrade [flutter_svg](https://pub.dev/packages/flutter_svg) and [mtg_symbology](https://pub.dev/packages/mtg_symbology) dependency versions
+* Make minimum supported SDK version Flutter 3.38/Dart 3.10 - in line with [flutter_svg](https://github.com/flutter/packages/blob/2fbe8734f450cb193b110851f9fc651290623398/third_party/packages/flutter_svg/pubspec.yaml#L8-L9)
+* Upgrade [test](https://pub.dev/packages/test) and [very_good_analysis](https://pub.dev/packages/very_good_analysis) dev dependency versions
+
 ## 2.0.4 - March 19, 2026
 
 * Upgrade [flutter_svg](https://pub.dev/packages/flutter_svg) and [mtg_symbology](https://pub.dev/packages/mtg_symbology) dependency versions
