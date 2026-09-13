@@ -1,3 +1,12 @@
+## 2.0.6 - September 12, 2026
+
+* Update the [example](https://github.com/zmuranaka/magic_the_gathering_flutter/tree/master/example) app
+    * Bumped Gradle, Kotlin, and other versions
+    * Uses [very_good_analysis](https://pub.dev/packages/very_good_analysis) now
+* Upgrade [mtg_symbology](https://pub.dev/packages/mtg_symbology) dependency version
+* Upgrade [test](https://pub.dev/packages/test) dev dependency version
+* Upgrade [very_good_analysis](https://pub.dev/packages/very_good_analysis) dev dependency version
+
 ## 2.0.5 - July 3, 2026
 
 * Upgrade [flutter_svg](https://pub.dev/packages/flutter_svg) and [mtg_symbology](https://pub.dev/packages/mtg_symbology) dependency versions
