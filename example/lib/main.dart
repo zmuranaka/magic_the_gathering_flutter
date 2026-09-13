@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -8,7 +9,10 @@ void main() {
   runApp(const MyApp());
 }
 
+/// A simple example app for demonstrating the magic_the_gathering_flutter
+/// package.
 class MyApp extends StatelessWidget {
+  /// Construct a [MyApp], optionally passing [key].
   const MyApp({super.key});
 
   @override
@@ -23,7 +27,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// The home page for [MyApp].
 class MyHomePage extends StatefulWidget {
+  /// Construct a [MyHomePage], optionally passing [key].
   const MyHomePage({super.key});
 
   @override
@@ -36,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _loadMagicCards();
+    unawaited(_loadMagicCards());
   }
 
   Future<void> _loadMagicCards() async {
@@ -79,9 +85,13 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+/// Shows info about a [MtgCard].
 class MtgCardTile extends StatelessWidget {
+  /// Construct a [MtgCardTile], requiring [card] and optionally
+  /// passing [key].
   const MtgCardTile({required this.card, super.key});
 
+  /// The [MtgCard] that this [MtgCardTile] shows info for.
   final MtgCard card;
 
   @override
